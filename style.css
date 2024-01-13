@@ -1,404 +1,314 @@
-.body {
-    font-family: Be Vietnam Pro;
+/* Figma Styles of your File */
+:root {
+    /* Colors */
+    --absolute-white: #ffffff;
+    --White-99: #FCFCFD;
+    --White-97: #F7F7F8;
+    --White-95: #F1F1F3;
+
+
+    --absolute-black: #000000;
+
+    --orange-50: #ff9500;
+    --Orange-90: #FFEACC;
+
+    --grey-10: #1A1A1A;
+    --grey-15: #262626;
+    --grey-30: #4c4c4d;
+    --Grey-35: #59595A;
+
+    /* Fonts */
+    --ff-primary: 'Be Vietnam Pro', sans-serif;
+    --ff-body: var(--ff-primary);
+    --ff-heading: var(--ff-primary);
+
+    --fw-regular: 400;
+    --fw-semibold: 500;
+    --fw-bold: 600;
+
+    --fs-100: 0.875rem;
+    --fs-150: 1rem: 
+    --fs-200: 1.125rem;
+    --fs-300: 1.25rem;
+    --fs-350: 1.375rem;
+    --fs-400: 1.5rem;
+    --fs-425: 1.75rem;
+    --fs-450: 2.25rem;
+    --fs-500: 2.375rem;
+    --fs-600: 3rem;
+    --fs-625: 3.125rem;
+    --fs-650: 3.75rem;
+    --fs-700: 5rem;
+
+    --fs-body: var(--fs-200);
+    --fs-primary-heading: var(--fs-600);
+    --fs-secondary-heading: var(--fs-400);
+    --fs-hero-title: var(--fs-600);
+    --fs-hero-2nd-title: var(--fs-500);
+    --fs-all-digits: var(--fs-700);
 }
 
-/********************topbanner css**************************/
-.topBanner {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #FF9500;
-    border-radius: 8px;
-    padding: .5vw;
-    text-align: center;
-    gap: 10px;
+
+@media (max-width: 90rem) {
+    :root {
+        --fs-body: var(--fs-150);
+        --fs-primary-heading: var(--fs-500);
+        --fs-secondary-heading: var(--fs-300);
+        --fs-hero-title: var(--fs-450);
+        --fs-hero-2nd-title: var(--fs-425);
+        --fs-all-digits: var(--fs-650);
+    }
+
+
 }
 
-.icon {
-    width: 24px;
-    height: 24px;
-    overflow: visible;
+@media (max-width: 24.4rem) {
+    :root {
+        --fs-body: var(--fs-100);
+        --fs-primary-heading: var(--fs-425);
+        --fs-secondary-heading: var(--fs-300);
+        --fs-hero-title: var(--fs-400);
+        --fs-hero-2nd-title: var(--fs-100);
+        --fs-all-digits: var(--fs-625);
+    }
+
+}
+
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
     display: block;
-    margin: auto 0 auto 2px;
 }
 
-.txtTop {
-    color: var(--absolute-white, #ffffff);
-    text-align: left;
-    font-family: "BeVietnamPro-Regular", sans-serif;
-    font-size: 18px;
-    line-height: 150%;
-    font-weight: 400;
-    position: relative;
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }
 
-/***************************Nav Bar*********************************/
-.nav-bar {
+/* Utility classes */
+
+
+
+.text-grey-10 {
+    color: var(--grey-10);
+}
+
+.text-grey-15 {
+    color: var(--grey-15);
+}
+
+.text-grey-30 {
+    color: var(--grey-30);
+}
+
+.text-grey-35 {
+    color: var(--grey-35);
+}
+.text-white-100{
+    color: var(--absolute-white);
+}
+.text-orange-50{
+    color: var(--orange-50);
+}
+
+
+
+.bg-white-absol-100 {
+    background-color: var(--absolute-white);
+}
+
+.bg-white-99 {
+    background-color: var(--White-99);
+}
+
+.bg-white-97 {
+    background-color: var(--White-97);
+}
+
+.bg-white-95 {
+    background-color: var(--White-95);
+}
+
+.bg-black-absolute {
+    background-color: var(--absolute-black);
+}
+
+.bg-orange-50 {
+    background-color: var(--orange-50);
+}
+
+.bg-orange-90 {
+    background-color: var(--Orange-90);
+}
+
+
+
+.fw-regular {
+    font-weight: var(--fw-regular);
+}
+
+.fw-semibold {
+    font-weight: var(--fw-semibold);
+}
+
+.fw-bold {
+    font-weight: var(--fw-bold);
+}
+
+
+
+.fs-primary-heading {
+    font-size: var(--fs-primary-heading);
+}
+
+.fs-secondary-heading {
+    font-size: var(--fs-secondary-heading);
+}
+
+.fs-body{
+    font-size: var(--fs-body);
+}
+.fs-hero-title{
+    font-size: var(--fs-hero-title);
+}
+.fs-hero-2nd-title{
+    font-size: var(--fs-hero-2nd-title);
+}
+.fs-350 {
+    font-size: var(--fs-350);
+}
+
+.fs-625 {
+    font-size: var(--fs-625);
+}
+.fs-all-digits{
+    font-size: var(--fs-all-digits);
+}
+.fs-card-bold{
+    font-size: var(--fs-300);
+}
+
+
+/* General styling ***/
+
+.body{
+    font-family: var(--ff-body);
+    font-size: var(--fs-body);
+    color: var(--grey-15);    
+}
+
+.container{
+    padding-top: 2rem;
+    --padding: 1rem;
+    --min-width: 1440px;
+    width: min(var(--min-width, 100% - (var(--padding)*2)));
+    margin-inline: auto;
+}
+
+.even-columns{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: auto auto;
+    grid-auto-columns: 1fr;
+}
+
+
+
+@media (max-width: 24.375em){
+    .even-columns{
+        grid-auto-flow: column;
+    }
+}
+@media (max-width: 90em){
+    
+}
+
+.top-banner{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 10px 0 10px 5px;
-    align-items: center;
-    padding: 20px 132px 24px 132px;
-    align-self: stretch;
-
+    gap: 1rem;
+    border-radius: 8px;
+    justify-content: center;
+    padding: 1.5rem 0 1.5rem 0;
 }
 
-/*******Nav menu**/
-.menu-bar {
+.main-logo {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    position: relative;
-    gap: 50px;
-    align-items: center;
-}
-
-/****Logo**/
-.logo {
+    flex-direction: column;
+    justify-content: center;
     background: var(--orange-50, #ff9500);
     border-radius: 8px;
-    flex-shrink: 0;
-    width: 54px;
-    height: 54px;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.3rem;
     position: relative;
     overflow: hidden;
-}
-
-.shape-17 {
-    height: auto;
-    position: absolute;
-    right: 12.96%;
-    left: 12.96%;
-    width: 74.07%;
-    bottom: 12.96%;
-    top: 12.96%;
-    height: 74.07%;
-    overflow: visible;
-}
-
-/****Menu List**/
-li>a {
-    text-decoration: none;
-}
-
-ul {
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    gap: 10px;
-}
-
-.menuBtn {
-    border-radius: 8px;
-    padding: 14px 24px 14px 24px;
-    color: var(--grey-15, #262626);
-    text-align: left;
-    font-family: "BeVietnamPro-Regular", sans-serif;
-    font-size: 18px;
-    line-height: 150%;
-    font-weight: 400;
-    position: relative;
-}
-
-.menuBtn:hover {
-    background-color: rgb(240, 237, 236);
-}
-
-/***Sign In & Sign Up**/
-.signInUp {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    align-items: center;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    position: relative;
-}
-/******Sign Up Btn**/
-.signUP {
-    border-radius: 8px;
-    padding: 14px 34px 14px 34px;
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    align-items: center;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    position: relative;
-    border: none;
-    color: var(--grey-15, #262626);
-    text-align: left;
-    font-size: 18px;
-    line-height: 150%;
-    font-weight: 400;
-    position: relative;
-    color: var(--grey-15, #262626);
-    font-family: "BeVietnamPro-Regular", sans-serif;
-}
-
-/*****LoginInBtn */
-.loginBtn {
-    background: var(--orange-50, #ff9500);
-    border-radius: 8px;
-    padding: 14px 34px 14px 34px;
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    align-items: center;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    position: relative;
-    border: none;
-    color: var(--absolute-white, #ffffff);
-    text-align: left;
-    font-family: "BeVietnamPro-Regular", sans-serif;
-    font-size: 18px;
-    line-height: 150%;
-    font-weight: 400;
-    position: relative;
-}
-
-/* Explore courses: Get started: yellow color buttons  */
-.yellowButtons {
-    color: var(--Absolute-White, #FFF);
-    text-align: center;
-    font-weight: 600;
-    background: var(--orange-50, #ff9500);
-
-}
-
-
-/* view pricing: viewall * 2: Get it now: seeall faqs: buttons */
-.whiteButtons {
-    color: var(--Grey-15, #262626);
-    text-align: center;
-    font-weight: 500;
-
-}
-
-/* flexible: benefitNum: */
-.largestFont {
-    color: var(--Grey-15, #262626);
-    text-align: right;
-    font-size: 80px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
-    /* 30% */
-}
-
-
-/* $0: */
-.priceNumber {
-    color: var(--Grey-15, #262626);
-    font-size: 80px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 73%;
-    /* 58.4px */
-}
-
-
-
-#heroUnlock {
-    color: var(--Orange-50, #FF9500);
-    text-align: center;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%;
-    /* 72px */
-}
-
-/* Benefits: OurCourses: Our testomonials: Our pricing: */
-.title {
-    color: var(--Grey-15, #262626);
-    text-align: center;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%;
-    /* 72px */
-}
-
-
-/* faqTitle: */
-.faqTitle {
-    color: var(--Grey-15, #262626);
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 120%;
-    /* 57.6px */
-
-}
-
-
-/* with online: */
-.heroTitle2 {
-    color: var(--Grey-15, #262626);
-    text-align: center;
-    font-size: 38px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-    /* 57px */
-}
-
-
-/* courses card title */
-.courseTitle {
-    color: var(--Grey-15, #262626);
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%;
-    /* 36px */
-}
-
-
-/* /month: tag in Pricing section */
-.text1Pricing {
-    color: var(--Grey-30, #4C4C4D);
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 73%;
-    /* 14.6px */
-}
-
-
-/* Available features: in pricing section */
-.text2Pricing {
-    color: var(--Grey-15, #262626);
-    text-align: center;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-    /* 30px */
-}
-
-
-
-/* can i enroll: in FAQ/ what kind of: in faq footer:home: */
-.text1 {
-    color: var(--Grey-15, #262626);
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-    /* 30px */
-}
-
-
-
-
-
-
-
-
-
-/* 
-COLORS
-
-top banner: navHome: learn from: benefit lorem ipsum: loremipsum our courses: lorem ip Our testi: lorem ipsum orr pricing:
-rest: color: var(--Grey-35, #59595A);
-
-still you:color: var(--Grey-20, #333);
-
-4 weeks: Beginner: By John Smith: fit your: Learn the fundamentals:
-Access to selected: The web design course: footer:benefits
-
-color: var(--Grey-30, #4C4C4D);
- */
-
-
-
-
-
-/* Testimonial section profile Sarah L: */
-.testProfile {
-    color: var(--Grey-20, #333);
-    font-weight: 600;
-}
-
-/* monthly button: yearly button: free plan:Read Full story: */
-.buttonsPricing {
-    color: var(--Absolute-White, #FFF);
-    text-align: center;
-    font-weight: 500;
-}
-
-
-/* Read Full story: in Testimonials*/
-.readFull {
-    color: var(--Grey-15, #262626);
-    text-align: center;
-    font-weight: 500;
-}
-
-
-
-/* Absolutely: in faq section*/
-.text1faq {
-    color: var(--Grey-30, #4C4C4D);
-    letter-spacing: -0.108px;
-
-}
-
-/* Enrollment process in faq */
-.text2faq {
-    color: var(--Grey-20, #333);
-    font-weight: 500;
-}
-
-
-/* footer:email: */
-.text1footer {
-    color: var(--Grey-15, #262626);
-    font-style: normal;
-}
-
-
-
-
-/* footer:email: Absolutely: footer:benefits The web design course: 4 weeks: Beginner: By John Smith:
-fit your: Learn the fundamentals:
-Access to selected: still you:
-still you: top banner: navHome: learn from: benefit lorem ipsum: loremipsum our courses: lorem ip Our testi: lorem ipsum orr pricing: */
-.fontWeight {
-    font-weight: 400;
-}
-
-
-
-/* footer:benefits footer:email: Enrollment: Absolutely: monthly button: yearly button: free plan:
-Sarah L: The web design course:4 weeks: Beginner: By John Smith: fit your: Learn the fundamentals:
-Access to selected: still you:
-still you:
-top banner: navHome: learn from: benefit lorem ipsum: loremipsum our courses: lorem ip Our testi: lorem ipsum orr pricing:
-view pricing: viewall * 2: Get it now: seeall faqs: Explore courses: Get started: */
-.fontSize {
-    font-size: 18px;
-    font-style: normal;
-}
-
-
-/* footer:benefits footer:email: Enrollment: Absolutely: monthly button: yearly button: free plan:
-Sarah L: The web design course: fit your: Learn the fundamentals:
-Access to selected: still you:
-still you:
-top banner: navHome: learn from: benefit lorem ipsum: loremipsum our courses: lorem ip Our testi: lorem ipsum orr pricing:
-view pricing: viewall * 2: Get it now: seeall faqs: Explore courses: Get started: */
-.lineHeight {
-    line-height: 150%;
-    /* 27px */
-}
-
-/* 4 weeks: Beginner: By John Smith: */
-.lineHeight2 {
-    line-height: normal;
 }
