@@ -18,12 +18,11 @@
             <img src="./images/arrow.svg" alt="">
         </div>
         <header class="primary-header">
-            <div class="nav-bar">
-
+            <div class="nav-wrapper">
                 <a href="https://www.w3schools.com/">
                     <div class="main-logo"><img src="./images/logo.svg" alt=""></div>
                 </a>
-                <nav class="primary-navigation">
+                <nav class="primary-navigation" id="primary-navigation">
                     <ul role="list" class="nav-list">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Courses</a></li>
@@ -32,14 +31,19 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
-                <div>
+                <div class="button-wrapper">
                     <button class="button">Sign Up</button>
                     <button class="button">Sign In</button>
+                    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="true">
+                        <img src="./images/icon-hamburger.svg" alt="" class="hidden-icons" aria-controls="icon-hamburger" id="icon-hamburger" >
+                        <img src="./images/icon-close.svg" alt="" class="hidden-icons"  aria-controls="icon-close" id="icon-close" >
+                        <span class="visually-hidden">Menu</span>
+                    </button>
                 </div>
             </div>
         </header>
         <main>
-            <section class="padding-block-900" >
+            <section class="padding-block-900">
                 <div class="container">
                     <div class="svg1">
                         <img src="./images/hero-sec-logo1.svg" alt="">
@@ -59,12 +63,12 @@
                     </div>
                 </div>
             </section>
-            <section class="padding-block-900" >
+            <section class="padding-block-900">
                 <div class="hero-image">
                     <img src="./images/container1.png" alt="">
                 </div>
             </section>
-            <section class="padding-block-900" >
+            <section class="padding-block-900">
                 <div class="benfits-sec">
                     <h1 class="fs-primary-heading fw-bold text-grey-15">Benefits</h1>
                     <div>
@@ -129,7 +133,7 @@
                     </div>
                 </div>
             </section>
-            <section class="padding-block-900" >
+            <section class="padding-block-900">
                 <div class="our-courses">
                     <h1 class="fs-primary-heading fw-bold text-grey-15">Our Courses</h1>
                     <div>
@@ -518,7 +522,7 @@
             <p class="fs-body fw-regular text-grey-35">© 2023 Skillbridge. All rights reserved.</p>
         </footer>
     </div>
-
+    <script src="main.js"></script>
 </body>
 
 </html>
