@@ -19,51 +19,57 @@
         </div>
         <header class="primary-header">
             <div class="nav-wrapper">
-                <a href="https://www.w3schools.com/">
-                    <div class="main-logo"><img src="./images/logo.svg" alt=""></div>
-                </a>
-                <nav class="primary-navigation" id="primary-navigation">
-                    <ul role="list" class="nav-list">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Courses</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
+                <div class="logo-nav-group">
+                    <a href="https://www.w3schools.com/">
+                        <div class="main-logo"><img src="./images/logo.svg" alt=""></div>
+                    </a>
+                    <nav class="primary-navigation" id="primary-navigation">
+                        <ul role="list" class="nav-list">
+                            <li class="menu-list"><a href="#">Home</a></li>
+                            <li class="menu-list"><a href="#">Courses</a></li>
+                            <li class="menu-list"><a href="#">About Us</a></li>
+                            <li class="menu-list"><a href="#">Pricing</a></li>
+                            <li class="menu-list"><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
                 <div class="button-wrapper">
-                    <button class="button">Sign Up</button>
-                    <button class="button">Sign In</button>
-                    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="true">
-                        <img src="./images/icon-hamburger.svg" alt="" class="hidden-icons" aria-controls="icon-hamburger" id="icon-hamburger" >
-                        <img src="./images/icon-close.svg" alt="" class="hidden-icons"  aria-controls="icon-close" id="icon-close" >
+                    <button class="button bg-transparent">Sign Up</button>
+                    <button class="button bg-orange-50 text-white-100">Login In</button>
+                    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="true"
+                        onclick="toggleElements()">
+                        <img src="./images/icon-hamburger.svg" alt="" class="hidden-icons " id="hamburger">
+                        <img src="./images/icon-close.svg" alt="" class="hidden-icons close-hidden" id="close">
                         <span class="visually-hidden">Menu</span>
                     </button>
                 </div>
             </div>
         </header>
         <main>
-            <section class="padding-block-900">
-                <div class="container">
-                    <div class="svg1">
+            <section class="padding-hero">
+                <div class="hero-container">
+                    <div class="hero-external-image">
                         <img src="./images/hero-sec-logo1.svg" alt="">
-                    </div>
-                    <div class="main-title">
-                        <div class="logo-container">
-                            <img src="./images/hero-sec-logo2.svg" alt="">
+                        <div class="main-title">
+                            <div class="logo-container">
+                                <img src="./images/hero-sec-logo2.svg" alt="">
+                            </div>
+                            <h1 class="fs-hero-title fw-bold text-grey-50"><span class="text-orange-50">Unlock</span> Your
+                                Creative Potential</h1>
                         </div>
-                        <h1 class="fs-hero-title fw-bold text-grey-50"><span class="text-orange-50">Unlock</span> Your
-                            Creative Potential</h1>
                     </div>
-                    <h2 class="fs-hero-2nd-title fw-bold text-grey-15">with Online Design and Development Courses.</h2>
-                    <p class="text-grey-15 fs-body">Learn from Industry Experts and Enhance Your Skills.</p>
+                    
+                    <h2 class="fs-hero-2nd-title hero-2nd-title fw-bold text-grey-15">with Online Design and Development
+                        Courses.</h2>
+                    <p class="text-grey-15 fs-body hero-paragraph">Learn from Industry Experts and Enhance Your Skills.
+                    </p>
                     <div class="buttons-container">
-                        <button class="button">Explore Courses</button>
-                        <button class="button">View Pricing</button>
+                        <button class="button text-white-100 bg-orange-50">Explore Courses</button>
+                        <button class="button bg-transparent">View Pricing</button>
                     </div>
                 </div>
             </section>
-            <section class="padding-block-900">
+            <section class="padding-block-400">
                 <div class="hero-image">
                     <img src="./images/container1.png" alt="">
                 </div>
@@ -133,7 +139,7 @@
                     </div>
                 </div>
             </section>
-            <section class="padding-block-900">
+            <section class="padding-block-400">
                 <div class="our-courses">
                     <h1 class="fs-primary-heading fw-bold text-grey-15">Our Courses</h1>
                     <div>
@@ -247,7 +253,7 @@
                     </div>
                 </div>
             </section>
-            <section class=" padding-block-900 our-testimonials">
+            <section class=" padding-block-400 our-testimonials">
                 <div>
                     <h1 class="fs-primary-heading fw-bold text-grey-15">Our Testimonials</h1>
                     <div>
@@ -320,7 +326,7 @@
                         </div>
                     </div>
             </section>
-            <section class=" padding-block-900 our-pricing">
+            <section class=" padding-block-400 our-pricing">
                 <div>
                     <h1 class="fs-primary-heading fw-bold text-grey-15">Our Pricing</h1>
                     <div>
@@ -395,7 +401,7 @@
                     </div>
                 </div>
             </section>
-            <section class=" padding-block-900 faq">
+            <section class=" padding-block-400 faq">
                 <div class="faq-section">
                     <div>
                         <h1 class="fs-primary-heading fw-bold text-grey-15">Frequently Asked Questions</h1>
