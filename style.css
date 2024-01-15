@@ -571,39 +571,71 @@ picture {
     justify-content: right;
 }
 
-
-.flex-grid {
+/************* Two Even columns flex grid**/
+.flex-grid-two-col {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    background-color: var(--White-95);
+    justify-content: space-evenly;
 }
 
-.flex-box {
+.flex-box-two-col {
 
-    display: flex;
-    margin-top: 0px;
-    flex-basis: calc(45% - 0.2rem);
-    justify-content: space-evenly;
-    flex-direction: column;
+    flex-grow: 1;
+    width: 46%;
+    height: auto;
+    margin: 1rem;
     padding: 3rem;
+    background-color: var(--absolute-white);
+    border-radius: 0.6rem;
 }
 
+/************* Two Uneven columns flex grid**/
+.flex-grid-two-col-uneven {
+    display: flex;
+}
 
-.flex-grid2 {
+.flex-grid-two-col-uneven:first-child{
+    width: fit-content;
+    margin: 1rem;
+    padding: 3rem;
+
+    
+}
+.flex-box-two-col-uneven {
+
+    flex-grow: 1 2 auto;
+    background-color: var(--absolute-white);
+    border-radius: 0.6rem;
+    width: fit-content;
+    margin: 1rem;
+    padding: 3rem;
+
+}
+/************* Three Even columns flex grid**/
+
+.flex-grid-three-col {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.flex-box2 {
-
-    display: flex;
-    margin-top: 0px;
-    flex-basis: calc(33% - 0.1rem);
+    background-color: var(--White-95);
     justify-content: space-evenly;
-    flex-direction: column;
+
 }
 
+.flex-box-three-col {
+
+    flex-grow: 1;
+    width: 29%;
+    height: auto;
+    margin: 1rem;
+    padding: 3rem;
+    background-color: var(--absolute-white);
+    border-radius: 0.6rem;
+
+}
+
+  
+  
 
 @media (max-width: 24.4em) {
 
