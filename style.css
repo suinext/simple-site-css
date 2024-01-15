@@ -562,6 +562,17 @@ picture {
     text-align: right;
 }
 
+.line-spacing{
+    line-height: 3.5rem;
+}
+
+.text-decor-none{
+    text-decoration: none;
+}
+.space-evenly{
+    justify-content: space-evenly;
+}
+
 .flex-baseline {
     align-items: last baseline;
 }
@@ -610,6 +621,7 @@ picture {
     width: fit-content;
     margin: 1rem;
     padding: 3rem;
+    
 
 }
 /************* Three Even columns flex grid**/
