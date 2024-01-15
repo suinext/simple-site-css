@@ -25,16 +25,21 @@
                     </a>
                     <nav class="primary-navigation" id="primary-navigation">
                         <ul role="list" class="nav-list">
-                            <li class="menu-list"><a href="#">Home</a></li>
-                            <li class="menu-list"><a href="#">Courses</a></li>
-                            <li class="menu-list"><a href="#">About Us</a></li>
-                            <li class="menu-list"><a href="#">Pricing</a></li>
-                            <li class="menu-list"><a href="#">Contact</a></li>
+                            <li class="menu-list"><a href="#"><button
+                                        class="button bg-transparent button-border-none">Home</button></a></li>
+                            <li class="menu-list"><a href="#"><button
+                                        class="button bg-transparent button-border-none">Courses</button></a></li>
+                            <li class="menu-list"><a href="#"><button
+                                        class="button bg-transparent button-border-none">About Us</button></a></li>
+                            <li class="menu-list"><a href="#"><button
+                                        class="button bg-transparent button-border-none">Pricing</button></a></li>
+                            <li class="menu-list"><a href="#"><button
+                                        class="button bg-transparent button-border-none">Contact</button></a></li>
                         </ul>
                     </nav>
                 </div>
                 <div class="button-wrapper">
-                    <button class="button bg-transparent">Sign Up</button>
+                    <button class="button button-border-none bg-transparent">Sign Up</button>
                     <button class="button bg-orange-50 text-white-100">Login In</button>
                     <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="true"
                         onclick="toggleElements()">
@@ -411,18 +416,18 @@
                             </div>
                             <div class="full-width-button">
                                 <div class="align-items-center">
-                                <h3 class="fs-card-bold fw-bold text-grey-15 text-align-center">
-                                    Available Features
-                                </h3>
-                                <ul>
-                                    <li>Unlimited access to all courses.</li>
-                                    <li>Unlimited course materials and resources.</li>
-                                    <li>Priority support from instructors.</li>
-                                    <li>Course completion certificates.</li>
-                                    <li>Ad-free experience.</li>
-                                    <li>Access to exclusive Pro Plan community forums.</li>
-                                    <li>Early access to new courses and updates.</li>
-                                </ul>
+                                    <h3 class="fs-card-bold fw-bold text-grey-15 text-align-center">
+                                        Available Features
+                                    </h3>
+                                    <ul>
+                                        <li>Unlimited access to all courses.</li>
+                                        <li>Unlimited course materials and resources.</li>
+                                        <li>Priority support from instructors.</li>
+                                        <li>Course completion certificates.</li>
+                                        <li>Ad-free experience.</li>
+                                        <li>Access to exclusive Pro Plan community forums.</li>
+                                        <li>Early access to new courses and updates.</li>
+                                    </ul>
                                 </div>
                                 <button class="button bg-orange-50 text-white-100 text-align-center full-width-button">
                                     Get Started
@@ -505,13 +510,12 @@
             </section>
         </main>
         <footer>
-            <div class="footer flex-row space-evenly">
-                <div class="left-footer">
-                    <img src="./images/hero-sec-logo1.svg" alt="">
+            <div class="footer-div">
+                <div>
+                    <img src="./images/Logo (1).png" alt="">
                     <ul>
-                        <li>
-                            icon
-                            <p class="fs-body fw-regular text-grey-15">hello@skillbridge.com</p>
+                        <li class="menu-list">
+                            <a href="#" class="fs-body fw-regular text-grey-15"> hello@skillbridge.com</a>
                         </li>
                         <li>
                             icon
@@ -523,20 +527,18 @@
                         </li>
                     </ul>
                 </div>
-                <div class="right-footer flex-row space-evenly">
-                    <div class="footer-nav">
-                        <div class="home-nav">
+                <div>
+                    <div class="footer-div space-between">
+                        <div class="flex-row-fixed space-between">
                             <nav>
                                 <h3 class="fs-body fw-bold text-grey-35">Home</h3>
                                 <ul>
-                                    <li><a href="#">Benefits</a></li>
-                                    <li><a href="#">Our Courses</a></li>
-                                    <li><a href="#">Our Testimonials</a></li>
-                                    <li><a href="#">Our FAQ</a></li>
+                                    <li class="menu-list"><a href="#">Benefits</a></li>
+                                    <li class="menu-list"><a href="#">Our Courses</a></li>
+                                    <li class="menu-list"><a href="#">Our Testimonials</a></li>
+                                    <li class="menu-list"><a href="#">Our FAQ</a></li>
                                 </ul>
                             </nav>
-                        </div>
-                        <div class="about-nav">
                             <nav>
                                 <h3 class="fs-body fw-bold text-grey-35">About Us</h3>
                                 <ul>
@@ -546,18 +548,24 @@
                                 </ul>
                             </nav>
                         </div>
+                        <div>
+                            <h3 class="fs-body fw-bold text-grey-35">Social Profiles</h3>
+                            <ul>
+                                <li><a href="facebook">icon</a></li>
+                                <li><a href="twiiter">icon</a></li>
+                                <li><a href="linkedin">icon</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="social-profiles">
-                        <h3>Social Profiles</h3>
-                        <ul>
-                            <li><a href="facebook">icon</a></li>
-                            <li><a href="twiiter">icon</a></li>
-                            <li><a href="linkedin">icon</a></li>
-                        </ul>
-                    </div>
+
+
                 </div>
             </div>
-                <p class="fs-body fw-regular text-grey-35">© 2023 Skillbridge. All rights reserved.</p>
+
+
+
+
+            <p class="fs-body fw-regular text-grey-35">© 2023 Skillbridge. All rights reserved.</p>
         </footer>
     </div>
     <script src="main.js"></script>
