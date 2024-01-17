@@ -196,6 +196,7 @@ picture {
     font-size: 1.125rem;
 }
 
+
 .nav-wrapper {
     display: flex;
     align-items: center;
@@ -296,7 +297,9 @@ picture {
 }
 
 .hero-external-image {
-    overflow: visible;
+    position: relative;
+    top: 3px;
+    left: 2px;
 }
 
 .main-title {
@@ -358,7 +361,7 @@ picture {
 
 /****************hero image*************/
 .hero-image {
-    background-size: 100vw auto;
+    background-size: 100% auto;
     background-repeat: no-repeat;
 }
 
@@ -366,6 +369,15 @@ picture {
     display: block;
     position: fixed;
 }
+.icon-footer{
+    display: flex;
+    gap: .2rem;
+}
+/* .icon-footer{
+    position: absolute;
+    overflow: visible;
+    right: 1px;
+} */
 
 
 /******************* font color *************/
