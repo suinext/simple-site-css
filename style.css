@@ -296,11 +296,12 @@ picture {
     padding: 3rem;
 }
 
-.hero-external-image {
-    position: relative;
-    top: 3px;
-    left: 2px;
-}
+/* .hero-external-image {
+    position: absolute;
+    top: 0.2rem;
+    left: 0.2rem;
+    overflow: hidden;
+} */
 
 .main-title {
     display: flex;
@@ -309,6 +310,7 @@ picture {
     gap: 0.5rem;
     background-color: var(--White-99);
     border: 1px solid var(--White-95);
+    position: relative;
 }
 
 .logo-container {
@@ -361,10 +363,10 @@ picture {
 
 /****************hero image*************/
 .hero-image {
-    background-size: 100% auto;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
+    width: 100vw;
 }
-
 .opened {
     display: block;
     position: fixed;
@@ -373,11 +375,6 @@ picture {
     display: flex;
     gap: .2rem;
 }
-/* .icon-footer{
-    position: absolute;
-    overflow: visible;
-    right: 1px;
-} */
 
 
 /******************* font color *************/
