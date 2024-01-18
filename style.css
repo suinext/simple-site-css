@@ -54,6 +54,12 @@
     --size-300: .8rem;
     --size-200: .6rem;
     --size-100: .4rem;
+
+
+    --min-width: 100%;
+    /* Default value for --min-width */
+    --padding: 20px;
+    /* Default value for --padding */
 }
 
 
@@ -237,7 +243,7 @@ picture {
         margin-inline: auto;
         padding: 10rem;
         inset: 7rem var(--size-400) auto;
-        background: rgb(255, 149, 0, 0.8);
+        background: rgba(23, 23, 22, 0.8);
         border-radius: var(--size-100);
         gap: var(--size-400);
         box-shadow: 0 0 0.25rem rgb(0, 0, 0, 0.05);
@@ -310,7 +316,6 @@ picture {
     gap: 0.5rem;
     background-color: var(--White-99);
     border: 1px solid var(--White-95);
-    position: relative;
 }
 
 .logo-container {
@@ -365,13 +370,16 @@ picture {
 .hero-image {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    width: 100vw;
+    width: 100%;
+    display: inline-block;
 }
+
 .opened {
     display: block;
     position: fixed;
 }
-.icon-footer{
+
+.icon-footer {
     display: flex;
     gap: .2rem;
 }
@@ -502,13 +510,22 @@ picture {
 
 }
 
+
 .container {
-    --max-width: 1110px;
-    --padding: 1rem;
-    padding-top: 2rem;
-    
-    width: min(var(--min-width, 100% - (var(--padding)*2)));
-    margin-inline: auto;
+    width: min(var(--min-width), calc(100% - (var(--padding) * 2)));
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: var(--padding);
+}
+
+@media (max-width: 25em) {
+    .container{
+        padding: 0.3rem 0 0 0;
+    }
+}
+
+.top-container {
+    margin: 2%;
 }
 
 .padding-block-400 {
@@ -619,22 +636,22 @@ picture {
 /************* Two Uneven columns flex grid**/
 .flex-grid-two-col-uneven {
     display: flex;
+    flex-wrap: wrap;
+    background-color: var(--White-95);
+    justify-content: space-evenly;
 }
 
 .flex-grid-two-col-uneven:first-child {
-    width: fit-content;
-    margin: 1rem;
-    padding: 3rem;
-
-
+    width: 100%;
 }
 
 .flex-box-two-col-uneven {
 
-    flex-grow: 1 2 auto;
+    flex-grow: 1;
     background-color: var(--absolute-white);
     border-radius: 0.6rem;
-    width: fit-content;
+    width: 46%;
+    height: auto;
     margin: 1rem;
     padding: 3rem;
 }
@@ -664,10 +681,14 @@ picture {
 @media (max-width: 24.4em) {
 
     .flex-grid-three-col {
-        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: var(--White-95);
+        justify-content: space-evenly;
     }
 
     .flex-box-three-col {
+        width: 100%;
         flex-basis: calc(100%);
         align-items: flex-start;
         padding-top: 0.4rem;
@@ -738,60 +759,69 @@ picture {
 
 /******************footer********************/
 
-.footer-div-left{
+.footer-div-left {
     display: flex;
     width: 48%;
     justify-content: flex-start;
 }
-.footer-div-middle{
+
+.footer-div-middle {
     display: flex;
     width: 30%;
     justify-content: space-evenly;
 }
-.footer-div-right{
+
+.footer-div-right {
     display: flex;
     width: 18%;
 
 }
-.footer-div{
+
+.footer-div {
     padding: 3rem;
-    display: flex;
-    justify-content:space-around;
-}
-
-.flex-footer{
-    display:flex;
-}
-
-.social-profiles{
     display: flex;
     justify-content: space-around;
 }
+
+.flex-footer {
+    display: flex;
+}
+
+.social-profiles {
+    display: flex;
+    justify-content: space-around;
+}
+
 @media (max-width: 24.4em) {
-    .footer-div-left  {
+    .footer-div-left {
         width: 100%;
     }
-    .footer-div-middle{
+
+    .footer-div-middle {
         width: 100%;
     }
-    .footer-div-right{
+
+    .footer-div-right {
         width: 100%;
     }
-    .flex-footer{
+
+    .flex-footer {
         flex-direction: column;
     }
-    .footer-div-middle{
+
+    .footer-div-middle {
         justify-content: flex-start;
     }
-    .footer-div{
+
+    .footer-div {
         padding: 0.1rem;
-    }   
+    }
 }
 
 /***********Faq* Mobile**********/
 @media (max-width: 24.4em) {
-    .flex-grid-two-col-uneven:first-child{
+    .flex-grid-two-col-uneven:first-child {
         margin: .2rem;
         padding: .1rem;
-    }   
+    }
 }
