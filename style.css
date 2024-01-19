@@ -304,9 +304,20 @@ picture {
 
 .hero-external-image {
     position: relative;
-  left: 0.8rem;
-  bottom: 2rem;
+    left: 0.8rem;
+    bottom: 2rem;
 }
+
+@media (max-width:35rem) {
+    .hero-external-image{
+        width: 1.5rem;
+        left: 0.2rem;
+        bottom: 1.5rem;
+    
+    }
+}
+
+
 
 .main-title {
     display: flex;
@@ -518,7 +529,7 @@ picture {
 }
 
 @media (max-width: 25em) {
-    .container{
+    .container {
         padding: 0.3rem 0 0 0;
     }
 }
@@ -783,7 +794,7 @@ picture {
 }
 
 @media (max-width: 35em) {
-    .footer-div{
+    .footer-div {
         padding: 1rem 0 1rem 0;
     }
 }
