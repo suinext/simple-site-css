@@ -677,7 +677,7 @@ picture {
 
 }
 
-@media (max-width: 24.4em) {
+@media (max-width: 35em) {
 
     .flex-grid-three-col {
         display: flex;
@@ -782,6 +782,12 @@ picture {
     justify-content: space-around;
 }
 
+@media (max-width: 35em) {
+    .footer-div{
+        padding: 1rem 0 1rem 0;
+    }
+}
+
 .flex-footer {
     display: flex;
 }
@@ -791,7 +797,7 @@ picture {
     justify-content: space-around;
 }
 
-@media (max-width: 24.4em) {
+@media (max-width: 35em) {
     .footer-div-left {
         width: 100%;
     }
@@ -809,7 +815,7 @@ picture {
     }
 
     .footer-div-middle {
-        justify-content: flex-start;
+        justify-content: space-between;
     }
 
     .footer-div {
