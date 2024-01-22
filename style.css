@@ -309,11 +309,11 @@ picture {
 }
 
 @media (max-width:35rem) {
-    .hero-external-image{
+    .hero-external-image {
         width: 1.5rem;
         left: 0.2rem;
         bottom: 1.5rem;
-    
+
     }
 }
 
@@ -378,10 +378,12 @@ picture {
 
 /****************hero image*************/
 .hero-image {
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    position: relative;
+}
+
+#hero-image {
     width: 100%;
-    display: inline-block;
+    height: auto;
 }
 
 .opened {
