@@ -167,130 +167,100 @@ picture {
     }
 }
 
-/************************************************** Utility classes******************************* */
 
-.visually-hidden {
-    position: absolute;
-    height: 1px;
-    width: 1px;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
+nav{
+    background: var(--absolute-white);
+    height: 80px;
+    width: 100%;
 }
-
-
-/**************** primary-navigation *****************/
-
-.primary-header {
-    padding-top: 2rem;
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
 }
-
-.nav-list {
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a {
+    text-decoration:none;
+    text-transform: uppercase;
+    color: rgb(38, 35, 35);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+a.active,a:hover {
+    background: var(--Orange-90);
+    transition: 0.5s;
+}
+.checkbtn{
+    font-size: 30px;
     color: var(--grey-15);
-    padding: 1rem;
-    gap: var(--size-400);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.menu-list>a {
-    text-decoration: none;
-    color: var(--grey-15);
-    font-size: 1.125rem;
-}
-
-
-.nav-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-/* .logo-nav-group {
-    gap: var(--size-500);
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-} */
-
-.button-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.hidden-icons {
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
     display: none;
 }
-
-@media (max-width:50em) {
-    .hidden-icons {
+#check{
+    display: none;
+}
+@media (max-width: 952px) {
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px) {
+    .checkbtn{
         display: block;
     }
-
-    .close-hidden {
-        display: none;
-    }
-    #close{
-        width: 34px;
-    }
-
-    .primary-navigation {
-        display: none;
-        color: var(--grey-15);
-        position: absolute;
-        max-width: 50%;
-        margin-inline: auto;
-        margin-top: 28%;
-        inset: 3rem var(--size-400) auto;
-        background: var(--orange-50);
-        border-radius: var(--size-100);
-        box-shadow: 0 0 0.25rem rgb(0, 0, 0, 0.05);
-    }
-
-    .primary-navigation[data-visible] {
-        display: block;
-    }
-
-    .primary-header[data-overlay]::before {
-        content: "";
-        position: relative;
-        z-index: 2;
-        inset: 0;
-        background-image: linear-gradient(rgb (0 0 0/0), rgb(0 0 0/0.8));
-    }
-
-    .mobile-nav-toggle {
-        display: block;
-        position: sticky;
-        top: var(--size-700);
-        right: var(--size-400);
-        cursor: pointer;
-        background: transparent;
-        border: 0;
-        padding: 1em;
-    }
-
-    .nav-list {
-        display: grid;
-        gap: var(6rem);
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: var(--Orange-90);
+        top: 153px;
+        left: -100%;
         text-align: center;
-        font-weight: bold;
-        gap: clamp(var(--size-400), 5vw, var(--size-900));
+        transition: all .5s;
     }
-
-    .nav-list a {
-        text-decoration: none;
-        color: rgb(80, 46, 46);
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
     }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a:active{
+        background: none;
+        color: var(--orange-50);
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
 
-    .nav-list a:hover,
-    .nav-list a:focus {
-        text-decoration: none;
-        color: rgb(251, 248, 248);
+@media (max-width: 290px) {
+    label.logo{
+        padding: 0 25px;
+        font-size: 25px;
+    }
+    label.checkbtn{
+        padding: 0;
+        font-size: 25px;
     }
 }
 
@@ -307,6 +277,7 @@ picture {
 
 .hero-external-image {
     position: relative;
+    z-index: -1;
     left: 0.8rem;
     bottom: 2rem;
 }
@@ -319,10 +290,8 @@ picture {
 
     }
 }
-
-
-
 .main-title {
+    z-index: -2;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -381,7 +350,8 @@ picture {
 
 /****************hero image*************/
 .hero-image {
-    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #hero-image {
@@ -717,7 +687,6 @@ picture {
 .top-banner {
     display: flex;
     gap: 0.5rem;
-    border-radius: 8px;
     justify-content: center;
     padding: 1.5rem 0 1.5rem 0;
 }

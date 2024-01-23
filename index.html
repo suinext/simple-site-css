@@ -8,573 +8,545 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body class="body">
-    <div class="container">
-        <div class="top-container">
-            <div class="top-banner bg-orange-50">
-                <p class="fs-body fw-bold text-white-100">Free Courses 🌟 Sale Ends Soon, Get It Now</p>
-                <img src="./images/arrow.svg" alt="">
+    <div class="top-banner bg-orange-50">
+        <p class="fs-body fw-bold text-white-100">Free Courses 🌟 Sale Ends Soon, Get It Now</p>
+        <img src="./images/arrow.svg" alt="">
+    </div>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class='fas fa-bars'></i>
+        </label>
+        <label class="logo">SpaceX</label>
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="padding-hero padding-top-bottom">
+            <div class="hero-container">
+                <div class="main-title">
+                    <div class="hero-external-image">
+                        <img src="./images/hero-sec-logo1.svg" alt="">
+                    </div>
+                    <div class="logo-container">
+                        <img src="./images/hero-sec-logo2.svg" alt="">
+                    </div>
+                    <h1 class="fs-hero-title fw-bold text-grey-50"><span class="text-orange-50">Unlock</span>
+                        Your
+                        Creative Potential</h1>
+                </div>
+
+                <h2 class="fs-hero-2nd-title hero-2nd-title fw-bold text-grey-15">with Online Design and Development
+                    Courses.</h2>
+                <p class="text-grey-15 fs-body hero-paragraph">Learn from Industry Experts and Enhance Your Skills.
+                </p>
+                <div class="buttons-container">
+                    <button class="button text-white-100 bg-orange-50">Explore Courses</button>
+                    <button class="button bg-transparent">View Pricing</button>
+                </div>
             </div>
-            <header class="primary-header">
-                <div class="nav-wrapper">
-                    <a href="https://www.w3schools.com/">
-                        <div class="main-logo"><img src="./images/logo.svg" alt=""></div>
-                    </a>
-
-                    <nav class="primary-navigation" id="primary-navigation">
-                        <ul role="list" class="nav-list">
-                            <li class="menu-list"><a href="#"><button
-                                        class="button bg-transparent button-border-none">Home</button></a></li>
-                            <li class="menu-list"><a href="#"><button
-                                        class="button bg-transparent button-border-none">Courses</button></a></li>
-                            <li class="menu-list"><a href="#"><button
-                                        class="button bg-transparent button-border-none">About Us</button></a></li>
-                            <li class="menu-list"><a href="#"><button
-                                        class="button bg-transparent button-border-none">Pricing</button></a></li>
-                            <li class="menu-list"><a href="#"><button
-                                        class="button bg-transparent button-border-none">Contact</button></a></li>
-                        </ul>
-                    </nav>
-                    <div class="button-wrapper">
-                        <button class="button button-border-none bg-transparent">Sign Up</button>
-                        <button class="button bg-orange-50 text-white-100">Login In</button>
-                        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="true"
-                            onclick="toggleElements()">
-                            <img src="./images/icon-hamburger.svg" alt="" class="hidden-icons " id="hamburger">
-                            <img src="./images/icon-close.svg" alt="" class="hidden-icons close-hidden" id="close">
-                            <span class="visually-hidden">Menu</span>
-                        </button>
-                    </div>
-                </div>
-            </header>
-        </div>
-
-        <main>
-            <section class="padding-hero padding-top-bottom">
-                <div class="hero-container">
-                    <div class="main-title">
-                        <div class="hero-external-image">
-                            <img src="./images/hero-sec-logo1.svg" alt="">
-                        </div>
-                        <div class="logo-container">
-                            <img src="./images/hero-sec-logo2.svg" alt="">
-                        </div>
-                        <h1 class="fs-hero-title fw-bold text-grey-50"><span class="text-orange-50">Unlock</span>
-                            Your
-                            Creative Potential</h1>
-                    </div>
-
-                    <h2 class="fs-hero-2nd-title hero-2nd-title fw-bold text-grey-15">with Online Design and Development
-                        Courses.</h2>
-                    <p class="text-grey-15 fs-body hero-paragraph">Learn from Industry Experts and Enhance Your Skills.
-                    </p>
-                    <div class="buttons-container">
-                        <button class="button text-white-100 bg-orange-50">Explore Courses</button>
-                        <button class="button bg-transparent">View Pricing</button>
-                    </div>
-                </div>
-            </section>
-            <section class=" padding-top-bottom">
-                <div class="hero-image">
-                    <img src="./images/Container.svg" alt="" id="hero-image">
-                </div>
-            </section>
-            <section class="padding-block-900 padding-top-bottom">
-                <div class="benfits-sec">
-                    <h1 class="fs-primary-heading fw-bold text-grey-15">Benefits</h1>
-                    <div class="flex-row">
-                        <div>
-                            <p class="fs-body fw-regular text-grey-35">
-                                Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet
-                                et.
-                                Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat
-                                senectus in.
-                            </p>
-                        </div>
-                        <div>
-                            <button class="button bg-transparent">View All</button>
-                        </div>
-                    </div>
-                    <div class="benefit-cards flex-grid-three-col">
-                        <div class="flex-box-three-col">
-                            <h1 class="fs-all-digits fw-bold text-grey-15 text-align-right">01</h1>
-                            <h2 class="fs-secondary-heading fw-bold text-grey-20">Flexible Learning Schedule</h2>
-                            <p class="fs-body fw-regular text-grey-30">Fit your coursework around your existing
-                                commitments
-                                and obligations.</p>
-                            <div class="flex-end"><button class="button bg-transparent"><img src="./images/up-arrow.png"
-                                        rel=""></button></div>
-                        </div>
-                        <div class="flex-box-three-col">
-                            <h1 class="fs-all-digits fw-bold text-grey-15 text-align-right">02</h1>
-                            <h2 class="fs-secondary-heading fw-bold text-grey-20">Expert Instruction</h2>
-                            <p class="fs-body fw-regular text-grey-30">Learn from industry experts who have hands-on
-                                experience in design and development.</p>
-                            <div class="flex-end"><button class="button bg-transparent"><img src="./images/up-arrow.png"
-                                        rel=""></button></div>
-
-                        </div>
-                        <div class="flex-box-three-col">
-                            <h1 class="fs-all-digits fw-bold text-grey-15 text-align-right">03</h1>
-                            <h2 class="fs-secondary-heading fw-bold text-grey-20">Diverse Course Offerings</h2>
-                            <p class="fs-body fw-regular text-grey-30">Explore a wide range of design and development
-                                courses covering various topics.</p>
-                            <div class="flex-end"><button class="button bg-transparent"><img src="./images/up-arrow.png"
-                                        rel=""></button></div>
-
-                        </div>
-                        <div class="flex-box-three-col">
-                            <h1 class="fs-all-digits fw-bold text-grey-15 text-align-right">04</h1>
-                            <h2 class="fs-secondary-heading fw-bold text-grey-20">Updated Curriculum</h2>
-                            <p class="fs-body fw-regular text-grey-30">Access courses with up-to-date content reflecting
-                                the
-                                latest trends and industry practices.</p>
-                            <div class="flex-end"><button class="button bg-transparent"><img src="./images/up-arrow.png"
-                                        rel=""></button></div>
-
-                        </div>
-                        <div class="flex-box-three-col">
-                            <h1 class="fs-all-digits fw-bold text-grey-15 text-align-right">05</h1>
-                            <h2 class="fs-secondary-heading fw-bold text-grey-20">Practical Projects and Assignments
-                            </h2>
-                            <p class="fs-body fw-regular text-grey-30">Develop a portfolio showcasing your skills and
-                                abilities to potential employers.</p>
-                            <div class="flex-end"><button class="button bg-transparent"><img src="./images/up-arrow.png"
-                                        rel=""></button></div>
-
-                        </div>
-                        <div class="flex-box-three-col">
-                            <h1 class="fs-all-digits fw-bold text-grey-15 text-align-right">06</h1>
-                            <h2 class="fs-secondary-heading fw-bold text-grey-20">Interactive Learning Environment</h2>
-                            <p class="fs-body fw-regular text-grey-30">Collaborate with fellow learners, exchanging
-                                ideas
-                                and feedback to enhance your understanding.</p>
-                            <div class="flex-end"><button class="button bg-transparent"><img src="./images/up-arrow.png"
-                                        rel=""></button></div>
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="padding-block-400 padding-top-bottom">
-                <div class="our-courses">
-                    <h1 class="fs-primary-heading fw-bold text-grey-15">Our Courses</h1>
+        </section>
+        <section class=" padding-top-bottom">
+            <div class="hero-image">
+                <img src="./images/Container.svg" alt="" id="hero-image">
+            </div>
+        </section>
+        <section class="padding-block-900 padding-top-bottom">
+            <div class="benfits-sec">
+                <h1 class="fs-primary-heading fw-bold text-grey-15">Benefits</h1>
+                <div class="flex-row">
                     <div>
                         <p class="fs-body fw-regular text-grey-35">
-                            Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et.
+                            Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet
+                            et.
                             Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat
                             senectus in.
                         </p>
-                        <button class="button bg-white-absol-100">View All</button>
                     </div>
-                    <div class="flex-grid-two-col">
-                        <div class="flex-box-two-col">
-                            <img src="./images/image0.png" alt="">
-                            <div class="flex-row text-align-right space-between">
-                                <div class="flex-row-fixed">
-                                    <button class="button bg-white-95">4 weeks</button>
-                                    <button class="button bg-transparent">Beginner</button>
-                                </div>
-                                <h3 class="fs-course-card-name fw-bold text-grey-15">By John Smith</h3>
+                    <div>
+                        <button class="button bg-transparent">View All</button>
+                    </div>
+                </div>
+                <div class="benefit-cards flex-grid-three-col">
+                    <div class="flex-box-three-col">
+                        <h1 class="fs-all-digits fw-bold text-grey-15 text-align-right">01</h1>
+                        <h2 class="fs-secondary-heading fw-bold text-grey-20">Flexible Learning Schedule</h2>
+                        <p class="fs-body fw-regular text-grey-30">Fit your coursework around your existing
+                            commitments
+                            and obligations.</p>
+                        <div class="flex-end"><button class="button bg-transparent"><img src="./images/up-arrow.png"
+                                    rel=""></button></div>
+                    </div>
+                    <div class="flex-box-three-col">
+                        <h1 class="fs-all-digits fw-bold text-grey-15 text-align-right">02</h1>
+                        <h2 class="fs-secondary-heading fw-bold text-grey-20">Expert Instruction</h2>
+                        <p class="fs-body fw-regular text-grey-30">Learn from industry experts who have hands-on
+                            experience in design and development.</p>
+                        <div class="flex-end"><button class="button bg-transparent"><img src="./images/up-arrow.png"
+                                    rel=""></button></div>
+
+                    </div>
+                    <div class="flex-box-three-col">
+                        <h1 class="fs-all-digits fw-bold text-grey-15 text-align-right">03</h1>
+                        <h2 class="fs-secondary-heading fw-bold text-grey-20">Diverse Course Offerings</h2>
+                        <p class="fs-body fw-regular text-grey-30">Explore a wide range of design and development
+                            courses covering various topics.</p>
+                        <div class="flex-end"><button class="button bg-transparent"><img src="./images/up-arrow.png"
+                                    rel=""></button></div>
+
+                    </div>
+                    <div class="flex-box-three-col">
+                        <h1 class="fs-all-digits fw-bold text-grey-15 text-align-right">04</h1>
+                        <h2 class="fs-secondary-heading fw-bold text-grey-20">Updated Curriculum</h2>
+                        <p class="fs-body fw-regular text-grey-30">Access courses with up-to-date content reflecting
+                            the
+                            latest trends and industry practices.</p>
+                        <div class="flex-end"><button class="button bg-transparent"><img src="./images/up-arrow.png"
+                                    rel=""></button></div>
+
+                    </div>
+                    <div class="flex-box-three-col">
+                        <h1 class="fs-all-digits fw-bold text-grey-15 text-align-right">05</h1>
+                        <h2 class="fs-secondary-heading fw-bold text-grey-20">Practical Projects and Assignments
+                        </h2>
+                        <p class="fs-body fw-regular text-grey-30">Develop a portfolio showcasing your skills and
+                            abilities to potential employers.</p>
+                        <div class="flex-end"><button class="button bg-transparent"><img src="./images/up-arrow.png"
+                                    rel=""></button></div>
+
+                    </div>
+                    <div class="flex-box-three-col">
+                        <h1 class="fs-all-digits fw-bold text-grey-15 text-align-right">06</h1>
+                        <h2 class="fs-secondary-heading fw-bold text-grey-20">Interactive Learning Environment</h2>
+                        <p class="fs-body fw-regular text-grey-30">Collaborate with fellow learners, exchanging
+                            ideas
+                            and feedback to enhance your understanding.</p>
+                        <div class="flex-end"><button class="button bg-transparent"><img src="./images/up-arrow.png"
+                                    rel=""></button></div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="padding-block-400 padding-top-bottom">
+            <div class="our-courses">
+                <h1 class="fs-primary-heading fw-bold text-grey-15">Our Courses</h1>
+                <div>
+                    <p class="fs-body fw-regular text-grey-35">
+                        Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et.
+                        Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat
+                        senectus in.
+                    </p>
+                    <button class="button bg-white-absol-100">View All</button>
+                </div>
+                <div class="flex-grid-two-col">
+                    <div class="flex-box-two-col">
+                        <img src="./images/image0.png" alt="">
+                        <div class="flex-row text-align-right space-between">
+                            <div class="flex-row-fixed">
+                                <button class="button bg-white-95">4 weeks</button>
+                                <button class="button bg-transparent">Beginner</button>
                             </div>
-                            <h2 class="fs-secondary-heading fw-bold text-grey-15">Web Design Fundamentals</h2>
-                            <p class="fs-body fw-regular text-grey-30">Learn the fundamentals of web design, including
-                                HTML,
-                                CSS, and responsive design principles. Develop the skills to create visually appealing
-                                and
-                                user-friendly websites.</p>
-                            <button
-                                class="full-width-button text-align-center button fs-body fw-regular text-grey-15">Get
-                                it Now</button>
+                            <h3 class="fs-course-card-name fw-bold text-grey-15">By John Smith</h3>
                         </div>
-                        <div class="flex-box-two-col">
-                            <img src="./images/image1.png" alt="">
-                            <div class="flex-row text-align-right space-between">
-                                <div class="flex-row-fixed">
-                                    <button class="button bg-white-95">6 Weeks</button>
-                                    <button class="button bg-transparent">Intermediate</button>
-                                </div>
-                                <h3 class="fs-course-card-name fw-bold text-grey-15">By Emily Johnson</h3>
+                        <h2 class="fs-secondary-heading fw-bold text-grey-15">Web Design Fundamentals</h2>
+                        <p class="fs-body fw-regular text-grey-30">Learn the fundamentals of web design, including
+                            HTML,
+                            CSS, and responsive design principles. Develop the skills to create visually appealing
+                            and
+                            user-friendly websites.</p>
+                        <button class="full-width-button text-align-center button fs-body fw-regular text-grey-15">Get
+                            it Now</button>
+                    </div>
+                    <div class="flex-box-two-col">
+                        <img src="./images/image1.png" alt="">
+                        <div class="flex-row text-align-right space-between">
+                            <div class="flex-row-fixed">
+                                <button class="button bg-white-95">6 Weeks</button>
+                                <button class="button bg-transparent">Intermediate</button>
                             </div>
-                            <h2 class="fs-secondary-heading fw-bold text-grey-15">UI/UX Design</h2>
-                            <p class="fs-body fw-regular text-grey-30">Master the art of creating intuitive user
-                                interfaces
-                                (UI) and enhancing user experiences (UX). Learn design principles, wireframing,
-                                prototyping,
-                                and usability testing techniques.</p>
-                            <button
-                                class="full-width-button text-align-center button fs-body fw-regular text-grey-15">Get
-                                it Now</button>
+                            <h3 class="fs-course-card-name fw-bold text-grey-15">By Emily Johnson</h3>
                         </div>
-                        <div class="flex-box-two-col">
-                            <img src="./images/image2.png" alt="">
-                            <div class="flex-row text-align-right space-between">
-                                <div class="flex-row-fixed">
-                                    <button class="button bg-white-95">8 Weeks</button>
-                                    <button class="button bg-transparent">Intermediate</button>
-                                </div>
-                                <h3 class="fs-course-card-name fw-bold text-grey-15">By David Brown</h3>
+                        <h2 class="fs-secondary-heading fw-bold text-grey-15">UI/UX Design</h2>
+                        <p class="fs-body fw-regular text-grey-30">Master the art of creating intuitive user
+                            interfaces
+                            (UI) and enhancing user experiences (UX). Learn design principles, wireframing,
+                            prototyping,
+                            and usability testing techniques.</p>
+                        <button class="full-width-button text-align-center button fs-body fw-regular text-grey-15">Get
+                            it Now</button>
+                    </div>
+                    <div class="flex-box-two-col">
+                        <img src="./images/image2.png" alt="">
+                        <div class="flex-row text-align-right space-between">
+                            <div class="flex-row-fixed">
+                                <button class="button bg-white-95">8 Weeks</button>
+                                <button class="button bg-transparent">Intermediate</button>
                             </div>
-                            <h2 class="fs-secondary-heading fw-bold text-grey-15">Mobile App Development</h2>
-                            <p class="fs-body fw-regular text-grey-30">Dive into the world of mobile app development.
-                                Learn
-                                to build native iOS and Android applications using industry-leading frameworks like
-                                Swift
-                                and Kotlin.</p>
-                            <button
-                                class="full-width-button text-align-center button fs-body fw-regular text-grey-15">Get
-                                it Now</button>
+                            <h3 class="fs-course-card-name fw-bold text-grey-15">By David Brown</h3>
                         </div>
-                        <div class="flex-box-two-col">
-                            <img src="./images/image3.png" alt="">
-                            <div class="flex-row text-align-right space-between">
-                                <div class="flex-row-fixed">
-                                    <button class="button bg-white-95">10 Weeks</button>
-                                    <button class="button bg-transparent">Beginner</button>
-                                </div>
-                                <h3 class="fs-course-card-name fw-bold text-grey-15">By Sarah Thompson</h3>
+                        <h2 class="fs-secondary-heading fw-bold text-grey-15">Mobile App Development</h2>
+                        <p class="fs-body fw-regular text-grey-30">Dive into the world of mobile app development.
+                            Learn
+                            to build native iOS and Android applications using industry-leading frameworks like
+                            Swift
+                            and Kotlin.</p>
+                        <button class="full-width-button text-align-center button fs-body fw-regular text-grey-15">Get
+                            it Now</button>
+                    </div>
+                    <div class="flex-box-two-col">
+                        <img src="./images/image3.png" alt="">
+                        <div class="flex-row text-align-right space-between">
+                            <div class="flex-row-fixed">
+                                <button class="button bg-white-95">10 Weeks</button>
+                                <button class="button bg-transparent">Beginner</button>
                             </div>
-                            <h2 class="fs-secondary-heading fw-bold text-grey-15">Graphic Design for Beginners</h2>
-                            <p class="fs-body fw-regular text-grey-30">Discover the fundamentals of graphic design,
-                                including typography, color theory, layout design, and image manipulation techniques.
-                                Create
-                                visually stunning designs for print and digital media.</p>
-                            <button
-                                class="full-width-button text-align-center button fs-body fw-regular text-grey-15">Get
-                                it Now</button>
+                            <h3 class="fs-course-card-name fw-bold text-grey-15">By Sarah Thompson</h3>
                         </div>
-                        <div class="flex-box-two-col">
-                            <img src="./images/image4.png" alt="">
-                            <div class="flex-row text-align-right space-between">
-                                <div class="flex-row-fixed">
-                                    <button class="button bg-white-95">10 Weeks</button>
-                                    <button class="button bg-transparent">Intermediate</button>
-                                </div>
-                                <h3 class="fs-course-card-name fw-bold text-grey-15">By Michael Adams</h3>
+                        <h2 class="fs-secondary-heading fw-bold text-grey-15">Graphic Design for Beginners</h2>
+                        <p class="fs-body fw-regular text-grey-30">Discover the fundamentals of graphic design,
+                            including typography, color theory, layout design, and image manipulation techniques.
+                            Create
+                            visually stunning designs for print and digital media.</p>
+                        <button class="full-width-button text-align-center button fs-body fw-regular text-grey-15">Get
+                            it Now</button>
+                    </div>
+                    <div class="flex-box-two-col">
+                        <img src="./images/image4.png" alt="">
+                        <div class="flex-row text-align-right space-between">
+                            <div class="flex-row-fixed">
+                                <button class="button bg-white-95">10 Weeks</button>
+                                <button class="button bg-transparent">Intermediate</button>
                             </div>
-                            <h2 class="fs-secondary-heading fw-bold text-grey-15">Front-End Web Development</h2>
-                            <p class="fs-body fw-regular text-grey-30">Become proficient in front-end web development.
-                                Learn
-                                HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build
-                                interactive
-                                and responsive websites.</p>
-                            <button
-                                class="full-width-button text-align-center button fs-body fw-regular text-grey-15">Get
-                                it Now</button>
+                            <h3 class="fs-course-card-name fw-bold text-grey-15">By Michael Adams</h3>
                         </div>
-                        <div class="flex-box-two-col">
-                            <img src="./images/image5.png" alt="">
-                            <div class="flex-row text-align-right space-between">
-                                <div class="flex-row-fixed">
-                                    <button class="button bg-white-95">6 Weeks</button>
-                                    <button class="button bg-transparent">Advance</button>
-                                </div>
-                                <h3 class="fs-course-card-name fw-bold text-grey-15">By Jennifer Wilson</h3>
+                        <h2 class="fs-secondary-heading fw-bold text-grey-15">Front-End Web Development</h2>
+                        <p class="fs-body fw-regular text-grey-30">Become proficient in front-end web development.
+                            Learn
+                            HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build
+                            interactive
+                            and responsive websites.</p>
+                        <button class="full-width-button text-align-center button fs-body fw-regular text-grey-15">Get
+                            it Now</button>
+                    </div>
+                    <div class="flex-box-two-col">
+                        <img src="./images/image5.png" alt="">
+                        <div class="flex-row text-align-right space-between">
+                            <div class="flex-row-fixed">
+                                <button class="button bg-white-95">6 Weeks</button>
+                                <button class="button bg-transparent">Advance</button>
                             </div>
-                            <h2 class="fs-secondary-heading fw-bold text-grey-15">Advanced JavaScript</h2>
-                            <p class="fs-body fw-regular text-grey-30">Take your JavaScript skills to the next level.
-                                Explore advanced concepts like closures, prototypes, asynchronous programming, and ES6
-                                features. Build complex applications with confidence.</p>
-                            <button
-                                class="full-width-button text-align-center button fs-body fw-regular text-grey-15">Get
-                                it Now</button>
+                            <h3 class="fs-course-card-name fw-bold text-grey-15">By Jennifer Wilson</h3>
+                        </div>
+                        <h2 class="fs-secondary-heading fw-bold text-grey-15">Advanced JavaScript</h2>
+                        <p class="fs-body fw-regular text-grey-30">Take your JavaScript skills to the next level.
+                            Explore advanced concepts like closures, prototypes, asynchronous programming, and ES6
+                            features. Build complex applications with confidence.</p>
+                        <button class="full-width-button text-align-center button fs-body fw-regular text-grey-15">Get
+                            it Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class=" padding-block-400 padding-top-bottom our-testimonials">
+            <div>
+                <h1 class="fs-primary-heading fw-bold text-grey-15">Our Testimonials</h1>
+                <div class="flex-row">
+                    <p class="fs-body fw-regular text-grey-35">
+                        Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et.
+                        Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat
+                        senectus in.
+                    </p>
+                    <button class="button bg-white-absol-100">View All</button>
+                </div>
+                <div class="testimonial-cards flex-grid-two-col">
+                    <div class="flex-box-two-col">
+                        <p class="fs-body fw-regular text-grey-30">
+                            The web design course provided a solid foundation for me. The instructors were
+                            knowledgeable
+                            and supportive, and the interactive learning environment was engaging. I highly
+                            recommend
+                            it!
+                        </p>
+                        <div class="flex-row-fixed align-items-center space-between">
+                            <div class="flex-row-fixed align-items-center">
+                                <img src="./images/image6.png" alt="">
+                                <p class="fs-body fw-bold text-grey-20">Sarah L</p>
+                            </div>
+                            <button class="bg-white-95 button">Read Full Story</button>
+                        </div>
+                    </div>
+                    <div class="flex-box-two-col">
+                        <p class="fs-body fw-regular text-grey-30">
+                            The UI/UX design course exceeded my expectations. The instructor's expertise and
+                            practical
+                            assignments helped me improve my design skills. I feel more confident in my career now.
+                            Thank you!
+                        </p>
+                        <div class="flex-row-fixed align-items-center space-between">
+                            <div class="flex-row-fixed align-items-center">
+                                <img src="./images/image7.png" alt="">
+                                <p class="fs-body fw-bold text-grey-20">Jason M</p>
+                            </div>
+                            <button class="bg-white-95 button">Read Full Story</button>
+                        </div>
+                    </div>
+                    <div class="flex-box-two-col">
+                        <p class="fs-body fw-regular text-grey-30">
+                            The mobile app development course was fantastic! The step-by-step tutorials and hands-on
+                            projects helped me grasp the concepts easily. I'm now building my own app. Great course!
+                        </p>
+                        <div class="flex-row-fixed align-items-center space-between">
+                            <div class="flex-row-fixed align-items-center">
+                                <img src="./images/image8.png" alt="">
+                                <p class="fs-body fw-bold text-grey-20">Emily R</p>
+                            </div>
+                            <button class="bg-white-95 button">Read Full Story</button>
+                        </div>
+                    </div>
+                    <div class="flex-box-two-col">
+                        <p class="fs-body fw-regular text-grey-30">
+                            I enrolled in the graphic design course as a beginner, and it was the perfect starting
+                            point. The instructor's guidance and feedback improved my design abilities
+                            significantly.
+                            I'm grateful for this course!
+                        </p>
+                        <div class="flex-row-fixed align-items-center space-between">
+                            <div class="flex-row-fixed align-items-center">
+                                <img src="./images/image9.png" alt="">
+                                <p class="fs-body fw-bold text-grey-20">Michael K</p>
+                            </div>
+                            <button class="bg-white-95 button">Read Full Story</button>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class=" padding-block-400 padding-top-bottom our-testimonials">
-                <div>
-                    <h1 class="fs-primary-heading fw-bold text-grey-15">Our Testimonials</h1>
-                    <div class="flex-row">
-                        <p class="fs-body fw-regular text-grey-35">
-                            Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et.
-                            Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat
-                            senectus in.
-                        </p>
-                        <button class="button bg-white-absol-100">View All</button>
-                    </div>
-                    <div class="testimonial-cards flex-grid-two-col">
-                        <div class="flex-box-two-col">
-                            <p class="fs-body fw-regular text-grey-30">
-                                The web design course provided a solid foundation for me. The instructors were
-                                knowledgeable
-                                and supportive, and the interactive learning environment was engaging. I highly
-                                recommend
-                                it!
-                            </p>
-                            <div class="flex-row-fixed align-items-center space-between">
-                                <div class="flex-row-fixed align-items-center">
-                                    <img src="./images/image6.png" alt="">
-                                    <p class="fs-body fw-bold text-grey-20">Sarah L</p>
-                                </div>
-                                <button class="bg-white-95 button">Read Full Story</button>
-                            </div>
-                        </div>
-                        <div class="flex-box-two-col">
-                            <p class="fs-body fw-regular text-grey-30">
-                                The UI/UX design course exceeded my expectations. The instructor's expertise and
-                                practical
-                                assignments helped me improve my design skills. I feel more confident in my career now.
-                                Thank you!
-                            </p>
-                            <div class="flex-row-fixed align-items-center space-between">
-                                <div class="flex-row-fixed align-items-center">
-                                    <img src="./images/image7.png" alt="">
-                                    <p class="fs-body fw-bold text-grey-20">Jason M</p>
-                                </div>
-                                <button class="bg-white-95 button">Read Full Story</button>
-                            </div>
-                        </div>
-                        <div class="flex-box-two-col">
-                            <p class="fs-body fw-regular text-grey-30">
-                                The mobile app development course was fantastic! The step-by-step tutorials and hands-on
-                                projects helped me grasp the concepts easily. I'm now building my own app. Great course!
-                            </p>
-                            <div class="flex-row-fixed align-items-center space-between">
-                                <div class="flex-row-fixed align-items-center">
-                                    <img src="./images/image8.png" alt="">
-                                    <p class="fs-body fw-bold text-grey-20">Emily R</p>
-                                </div>
-                                <button class="bg-white-95 button">Read Full Story</button>
-                            </div>
-                        </div>
-                        <div class="flex-box-two-col">
-                            <p class="fs-body fw-regular text-grey-30">
-                                I enrolled in the graphic design course as a beginner, and it was the perfect starting
-                                point. The instructor's guidance and feedback improved my design abilities
-                                significantly.
-                                I'm grateful for this course!
-                            </p>
-                            <div class="flex-row-fixed align-items-center space-between">
-                                <div class="flex-row-fixed align-items-center">
-                                    <img src="./images/image9.png" alt="">
-                                    <p class="fs-body fw-bold text-grey-20">Michael K</p>
-                                </div>
-                                <button class="bg-white-95 button">Read Full Story</button>
-                            </div>
-                        </div>
-                    </div>
-            </section>
-            <section class=" padding-block-400 padding-top-bottom our-pricing">
-                <div>
-                    <h1 class="fs-primary-heading fw-bold text-grey-15">Our Pricing</h1>
-                    <div class="flex-row">
-                        <p class="fs-body fw-regular text-grey-35">
-                            Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et.
-                            Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat
-                            senectus in.
-                        </p>
-                        <div class="flex-row-fixed">
-                            <button class="bg-orange-50 text-white-100 button">Monthly</button>
-                            <button class="bg-white-absol-100 text-grey-30 button">Yearly</button>
-                        </div>
-                    </div>
-
-                    <div class="flex-grid-two-col flex-row space-between">
-                        <div class="flex-column flex-box-two-col align-items-center padding-block-900">
-                            <button class="bg-orange-90 button text-align-center full-width-button">
-                                Free Plan
-                            </button>
-                            <div class="flex-row flex-baseline">
-                                <h1 class="fs-all-digits fw-bold text-grey-15">
-                                    $0
-                                </h1>
-                                <p>/month</p>
-                            </div>
-                            <div class=" full-width-button">
-                                <div class="align-items-center">
-                                    <h3 class="fs-card-bold fw-bold text-grey-15">
-                                        Available Features
-                                    </h3>
-                                    <ul>
-                                        <li>Access to selected free courses.</li>
-                                        <li>Limited course materials and resources.</li>
-                                        <li>Basic community support.</li>
-                                        <li>No certification upon completion.</li>
-                                        <li>Ad-supported platform.</li>
-                                        <li>Access to exclusive Pro Plan community forums.</li>
-                                        <li>Early access to new courses and updates.</li>
-                                    </ul>
-                                </div>
-
-                                <button class="button bg-orange-50 text-white-100 text-align-center full-width-button">
-                                    Get Started
-                                </button>
-                            </div>
-
-                        </div>
-                        <div class="flex-column flex-box-two-col align-items-center padding-block-900">
-                            <button class="bg-orange-90 button text-align-center full-width-button">
-                                Pro Plan
-                            </button>
-                            <div class="flex-row flex-baseline">
-                                <h1 class="fs-all-digits fw-bold text-grey-15">
-                                    $79
-                                </h1>
-                                <p>/month</p>
-                            </div>
-                            <div class="full-width-button">
-                                <div class="align-items-center">
-                                    <h3 class="fs-card-bold fw-bold text-grey-15 text-align-center">
-                                        Available Features
-                                    </h3>
-                                    <ul>
-                                        <li>Unlimited access to all courses.</li>
-                                        <li>Unlimited course materials and resources.</li>
-                                        <li>Priority support from instructors.</li>
-                                        <li>Course completion certificates.</li>
-                                        <li>Ad-free experience.</li>
-                                        <li>Access to exclusive Pro Plan community forums.</li>
-                                        <li>Early access to new courses and updates.</li>
-                                    </ul>
-                                </div>
-                                <button class="button bg-orange-50 text-white-100 text-align-center full-width-button">
-                                    Get Started
-                                </button>
-                            </div>
-                        </div>
+        </section>
+        <section class=" padding-block-400 padding-top-bottom our-pricing">
+            <div>
+                <h1 class="fs-primary-heading fw-bold text-grey-15">Our Pricing</h1>
+                <div class="flex-row">
+                    <p class="fs-body fw-regular text-grey-35">
+                        Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et.
+                        Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat
+                        senectus in.
+                    </p>
+                    <div class="flex-row-fixed">
+                        <button class="bg-orange-50 text-white-100 button">Monthly</button>
+                        <button class="bg-white-absol-100 text-grey-30 button">Yearly</button>
                     </div>
                 </div>
-            </section>
-            <section class="padding-block-400 padding-top-bottom faq">
-                <div class="faq-section flex-grid-two-col-uneven">
-                    <div class="flex-column flex-box-two-col-uneven">
-                        <h1 class="fs-primary-heading fw-bold text-grey-15">Frequently Asked Questions</h1>
-                        <p class="fs-body fw-regular text-grey-35">
-                            Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et.
-                            Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat
-                            senectus in.
-                        </p>
-                        <button class="button bg-white-absol-100">
-                            See All FAQ's
+
+                <div class="flex-grid-two-col flex-row space-between">
+                    <div class="flex-column flex-box-two-col align-items-center padding-block-900">
+                        <button class="bg-orange-90 button text-align-center full-width-button">
+                            Free Plan
                         </button>
-                    </div>
-                    <div class="flex-box-two-col-uneven">
-                        <ul>
-                            <li>
-                                <div>
-                                    <p class="fs-body fw-bold text-grey-15">Can I enroll in multiple courses at once?
-                                    </p>
-                                    <div>
-                                        <icon>*</icon>
-                                    </div>
-                                </div>
+                        <div class="flex-row flex-baseline">
+                            <h1 class="fs-all-digits fw-bold text-grey-15">
+                                $0
+                            </h1>
+                            <p>/month</p>
+                        </div>
+                        <div class=" full-width-button">
+                            <div class="align-items-center">
+                                <h3 class="fs-card-bold fw-bold text-grey-15">
+                                    Available Features
+                                </h3>
+                                <ul>
+                                    <li>Access to selected free courses.</li>
+                                    <li>Limited course materials and resources.</li>
+                                    <li>Basic community support.</li>
+                                    <li>No certification upon completion.</li>
+                                    <li>Ad-supported platform.</li>
+                                    <li>Access to exclusive Pro Plan community forums.</li>
+                                    <li>Early access to new courses and updates.</li>
+                                </ul>
+                            </div>
 
-                                <p class="fs-body fw-regular text-grey-30">Absolutely! You can enroll in multiple
-                                    courses
-                                    simultaneously and access them at your convenience.</p>
-                                <div>
-                                    <p class="fs-body fw-bold text-grey-15">Enrollment Process for Different Courses</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <p class="fs-body fw-bold text-grey-15">What kind of support can I expect from
-                                        instructors?</p>
-                                    <div>
-                                        <icon>*</icon>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <p class="fs-body fw-bold text-grey-15">Are the courses self-paced or do they have
-                                        specific start and end dates?</p>
-                                    <div>
-                                        <icon>*</icon>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <p class="fs-body fw-bold text-grey-15">Are there any prerequisites for the courses?
-                                    </p>
-                                    <div>
-                                        <icon>*</icon>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <p class="fs-body fw-bold text-grey-15">Can I download the course materials for
-                                        offline access?</p>
-                                    <div>
-                                        <icon>*</icon>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+                            <button class="button bg-orange-50 text-white-100 text-align-center full-width-button">
+                                Get Started
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="flex-column flex-box-two-col align-items-center padding-block-900">
+                        <button class="bg-orange-90 button text-align-center full-width-button">
+                            Pro Plan
+                        </button>
+                        <div class="flex-row flex-baseline">
+                            <h1 class="fs-all-digits fw-bold text-grey-15">
+                                $79
+                            </h1>
+                            <p>/month</p>
+                        </div>
+                        <div class="full-width-button">
+                            <div class="align-items-center">
+                                <h3 class="fs-card-bold fw-bold text-grey-15 text-align-center">
+                                    Available Features
+                                </h3>
+                                <ul>
+                                    <li>Unlimited access to all courses.</li>
+                                    <li>Unlimited course materials and resources.</li>
+                                    <li>Priority support from instructors.</li>
+                                    <li>Course completion certificates.</li>
+                                    <li>Ad-free experience.</li>
+                                    <li>Access to exclusive Pro Plan community forums.</li>
+                                    <li>Early access to new courses and updates.</li>
+                                </ul>
+                            </div>
+                            <button class="button bg-orange-50 text-white-100 text-align-center full-width-button">
+                                Get Started
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </section>
-        </main>
-        <footer>
-            <div class="footer-div flex-footer">
-                <div class="footer-div-left padding-block-400">
-                    <nav>
-                        <img src="./images/Logo (1).png" alt="">
-                        <ul role="list">
-                            <li class="menu-list">
-                                <a href="mailto:hello@skillbridge.com" class="fs-body fw-regular text-grey-15">
-                                    <p class="icon-footer"><img src="./images/mail.png" alt="">hello@skillbridge.com</p>
-                                </a>
-                            </li>
-                            <li class="menu-list">
-                                <a href="tel:+91 91813 23 2309" class="fs-body fw-regular text-grey-15">
-                                    <p class="icon-footer"> <img src="./images/telephone.png" alt=""> +91 91813 23 2309
-                                    </p>
-                                </a>
-                            </li>
-                            <li class="menu-list">
-                                <a href="#" class="fs-body fw-regular text-grey-15">
-                                    <p class="icon-footer"><img src="./images/location.png" alt=""> Somewhere in the
-                                        World</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+            </div>
+        </section>
+        <section class="padding-block-400 padding-top-bottom faq">
+            <div class="faq-section flex-grid-two-col-uneven">
+                <div class="flex-column flex-box-two-col-uneven">
+                    <h1 class="fs-primary-heading fw-bold text-grey-15">Frequently Asked Questions</h1>
+                    <p class="fs-body fw-regular text-grey-35">
+                        Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et.
+                        Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat
+                        senectus in.
+                    </p>
+                    <button class="button bg-white-absol-100">
+                        See All FAQ's
+                    </button>
                 </div>
-                <div class="footer-div-middle padding-block-400">
-                    <nav>
-                        <h3 class="fs-body fw-bold text-grey-35">Home</h3>
-                        <ul role="list">
-                            <li class="menu-list"><a href="#">Benefits</a></li>
-                            <li class="menu-list"><a href="#">Our Courses</a></li>
-                            <li class="menu-list"><a href="#">Our Testimonials</a></li>
-                            <li class="menu-list"><a href="#">Our FAQ</a></li>
-                        </ul>
-                    </nav>
-                    <nav>
-                        <h3 class="fs-body fw-bold text-grey-35">About Us</h3>
-                        <ul role="list">
-                            <li class="menu-list"><a href="#">Company</a></li>
-                            <li class="menu-list"><a href="#">Achievements</a></li>
-                            <li class="menu-list"><a href="#">Our Goals</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="footer-div-right padding-block-400">
-                    <nav>
-                        <h3 class="fs-body fw-bold text-grey-35">Social Profiles</h3>
-                        <ul role="list" class="social-profiles">
-                            <li class="menu-list"><a href="facebook"><button class="button-border-none"><img
-                                            src="./images/facebook.png" alt=""></button></a></li>
-                            <li class="menu-list"><a href="twiiter"><button class="button-border-none"><img
-                                            src="./images/twitter.png" alt=""></button></a></li>
-                            <li class="menu-list"><a href="linkedin"><button class="button-border-none"><img
-                                            src="./images/linkedin.png" alt=""></button></a></li>
-                        </ul>
-                    </nav>
+                <div class="flex-box-two-col-uneven">
+                    <ul>
+                        <li>
+                            <div>
+                                <p class="fs-body fw-bold text-grey-15">Can I enroll in multiple courses at once?
+                                </p>
+                                <div>
+                                    <icon>*</icon>
+                                </div>
+                            </div>
+
+                            <p class="fs-body fw-regular text-grey-30">Absolutely! You can enroll in multiple
+                                courses
+                                simultaneously and access them at your convenience.</p>
+                            <div>
+                                <p class="fs-body fw-bold text-grey-15">Enrollment Process for Different Courses</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p class="fs-body fw-bold text-grey-15">What kind of support can I expect from
+                                    instructors?</p>
+                                <div>
+                                    <icon>*</icon>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p class="fs-body fw-bold text-grey-15">Are the courses self-paced or do they have
+                                    specific start and end dates?</p>
+                                <div>
+                                    <icon>*</icon>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p class="fs-body fw-bold text-grey-15">Are there any prerequisites for the courses?
+                                </p>
+                                <div>
+                                    <icon>*</icon>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p class="fs-body fw-bold text-grey-15">Can I download the course materials for
+                                    offline access?</p>
+                                <div>
+                                    <icon>*</icon>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="flex-row align-items-center text-align-center">
-                <p class="fs-body fw-regular text-grey-35">© 2023 Skillbridge. All rights reserved.</p>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-div flex-footer">
+            <div class="footer-div-left padding-block-400">
+                <nav>
+                    <img src="./images/Logo (1).png" alt="">
+                    <ul role="list">
+                        <li class="menu-list">
+                            <a href="mailto:hello@skillbridge.com" class="fs-body fw-regular text-grey-15">
+                                <p class="icon-footer"><img src="./images/mail.png" alt="">hello@skillbridge.com</p>
+                            </a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="tel:+91 91813 23 2309" class="fs-body fw-regular text-grey-15">
+                                <p class="icon-footer"> <img src="./images/telephone.png" alt=""> +91 91813 23 2309
+                                </p>
+                            </a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="#" class="fs-body fw-regular text-grey-15">
+                                <p class="icon-footer"><img src="./images/location.png" alt=""> Somewhere in the
+                                    World</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </footer>
-    </div>
+            <div class="footer-div-middle padding-block-400">
+                <nav>
+                    <h3 class="fs-body fw-bold text-grey-35">Home</h3>
+                    <ul role="list">
+                        <li class="menu-list"><a href="#">Benefits</a></li>
+                        <li class="menu-list"><a href="#">Our Courses</a></li>
+                        <li class="menu-list"><a href="#">Our Testimonials</a></li>
+                        <li class="menu-list"><a href="#">Our FAQ</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h3 class="fs-body fw-bold text-grey-35">About Us</h3>
+                    <ul role="list">
+                        <li class="menu-list"><a href="#">Company</a></li>
+                        <li class="menu-list"><a href="#">Achievements</a></li>
+                        <li class="menu-list"><a href="#">Our Goals</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-div-right padding-block-400">
+                <nav>
+                    <h3 class="fs-body fw-bold text-grey-35">Social Profiles</h3>
+                    <ul role="list" class="social-profiles">
+                        <li class="menu-list"><a href="facebook"><button class="button-border-none"><img
+                                        src="./images/facebook.png" alt=""></button></a></li>
+                        <li class="menu-list"><a href="twiiter"><button class="button-border-none"><img
+                                        src="./images/twitter.png" alt=""></button></a></li>
+                        <li class="menu-list"><a href="linkedin"><button class="button-border-none"><img
+                                        src="./images/linkedin.png" alt=""></button></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="flex-row align-items-center text-align-center">
+            <p class="fs-body fw-regular text-grey-35">© 2023 Skillbridge. All rights reserved.</p>
+        </div>
+    </footer>
     <script src="main.js"></script>
 </body>
 
