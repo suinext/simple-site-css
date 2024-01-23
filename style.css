@@ -205,7 +205,7 @@ picture {
 
 .nav-wrapper {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
@@ -234,18 +234,19 @@ picture {
     .close-hidden {
         display: none;
     }
+    #close{
+        width: 34px;
+    }
 
     .primary-navigation {
         display: none;
         color: var(--grey-15);
-        position: fixed;
+        position: relative;
         max-width: 35rem;
         margin-inline: auto;
-        padding: 10rem;
-        inset: 7rem var(--size-400) auto;
-        background: rgba(23, 23, 22, 0.8);
+        inset: 3rem var(--size-400) auto;
+        background: transparent;
         border-radius: var(--size-100);
-        gap: var(--size-400);
         box-shadow: 0 0 0.25rem rgb(0, 0, 0, 0.05);
     }
 
