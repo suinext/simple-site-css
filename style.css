@@ -170,7 +170,7 @@ picture {
 
 nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background: var(--absolute-white);
     height: 80px;
     width: 75%;
@@ -227,10 +227,9 @@ a:hover {
 
 .checkbtn {
     font-size: 30px;
-    color: var(--grey-15);
+    color: var(--Grey-35);
     float: right;
     line-height: 80px;
-    margin-right: 40px;
     cursor: pointer;
     display: none;
 }
@@ -316,9 +315,9 @@ a:hover {
 
 @media (max-width:35rem) {
     .hero-external-image {
-        width: 1.5rem;
-        left: 0.2rem;
-        bottom: 1.5rem;
+        width: 1.3rem;
+        right: 0.1rem;
+        bottom: 1.3rem;
 
     }
 }
@@ -525,7 +524,8 @@ a:hover {
     font-family: var(--ff-body);
     font-size: var(--fs-body);
     color: var(--grey-15);
-
+    margin: 1rem;
+    background: var(--White-95);
 }
 
 
@@ -562,6 +562,10 @@ a:hover {
     display: flex;
 }
 
+.full-width{
+    width: 100%;
+}
+
 @media (max-width: 24.4em) {
     .flex-row {
         flex-direction: column;
@@ -572,7 +576,9 @@ a:hover {
     display: flex;
     flex-direction: column;
 }
-
+.justify-center{
+    justify-content: center;
+}
 .space-between {
     justify-content: space-between;
 }
@@ -625,12 +631,16 @@ a:hover {
 .flex-box-two-col {
 
     flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    row-gap: 1rem;
     width: 46%;
     height: auto;
     margin: 1rem;
-    padding: 3rem;
+    padding: 1.2rem;
     background-color: var(--absolute-white);
-    border-radius: 0.6rem;
+    border-radius: 0.6rem;  
+    
 }
 
 @media (max-width: 24.4em) {
@@ -642,8 +652,7 @@ a:hover {
     .flex-box-two-col {
         flex-basis: calc(100%);
         align-items: flex-start;
-        padding-top: 0.4rem;
-        padding-bottom: 0.2rem;
+        padding: 1.5rem;
     }
 
     .fs-course-card-name {
@@ -722,6 +731,7 @@ a:hover {
     gap: 0.5rem;
     justify-content: center;
     padding: 1.5rem 0 1.5rem 0;
+    border-radius: 6px;
 }
 
 /*********LOgo***************/
