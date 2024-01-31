@@ -238,8 +238,7 @@ a:hover {
     display: none;
 }
 
-@media (max-width: 952px) {
-    
+@media (max-width: 952px) {   
 
     .nav-header ul li a {
         font-size: 16px;
@@ -286,8 +285,7 @@ a:hover {
     }
 }
 
-@media (max-width: 290px) {
-    
+@media (max-width: 290px) {   
 
     label.checkbtn {
         padding: 0;
@@ -318,9 +316,6 @@ a:hover {
     left: -1.5rem;
     bottom:-0.8rem;
 }
-
-
-
 .main-title {
     padding: 0.5rem;
     border-radius: 12px;
@@ -526,7 +521,7 @@ a:hover {
     font-size: var(--fs-body);
     color: var(--grey-15);
     margin: 1rem;
-    background: var(--White-95);
+    background: var(--White-99);
 }
 
 
@@ -555,12 +550,20 @@ a:hover {
     padding: 1.5rem 0 1.5rem 0;
 }
 
+
+
 .flex-row-fixed {
     display: flex;
 }
 
 .flex-row {
     display: flex;
+}
+
+.flex-start{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 .full-width{
@@ -915,5 +918,30 @@ nav ul li a{
 
     .footer-div {
         padding: 0.1rem;
+    }
+}
+
+/**************courses sec*******/
+
+.flex-box-two-col-courses {
+
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    row-gap: 1rem;
+    width: 46%;
+    height: auto;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    /* background-color: var(--absolute-white); */
+    border-radius: 0.6rem;  
+    
+}
+
+@media (max-width: 25rem) {
+    .flex-box-two-col-courses {
+        flex-basis: calc(100%);
+        align-items: flex-start;
+        padding: 0.2rem;
     }
 }
