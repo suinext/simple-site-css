@@ -1,182 +1,26 @@
-/* Figma Styles of your File */
-:root {
-    /* Colors */
-    --absolute-white: #ffffff;
-    --White-99: #FCFCFD;
-    --White-97: #F7F7F8;
-    --White-95: #F1F1F3;
+@import "./root.css";
+@import "./reset.css";
+@import "./courses.css";
+@import "./utilities.css";
 
-
-    --absolute-black: #000000;
-
-    --orange-50: rgb(255, 149, 0);
-    --Orange-90: #FFEACC;
-
-    --grey-10: #1A1A1A;
-    --grey-15: #262626;
-    --grey-30: #4c4c4d;
-    --Grey-35: #59595A;
-
-    /* Fonts */
-    --ff-primary: 'Be Vietnam Pro', sans-serif;
-    --ff-body: var(--ff-primary);
-    --ff-heading: var(--ff-primary);
-
-    --fw-regular: 400;
-    --fw-semibold: 500;
-    --fw-bold: 600;
-
-    --fs-100: 0.875rem;
-    --fs-150: 1rem;
-    --fs-200: 1.125rem;
-    --fs-300: 1.25rem;
-    --fs-350: 1.375rem;
-    --fs-400: 1.5rem;
-    --fs-425: 1.75rem;
-    --fs-450: 2.25rem;
-    --fs-500: 2.375rem;
-    --fs-600: 3rem;
-    --fs-625: 3.125rem;
-    --fs-650: 3.75rem;
-    --fs-700: 5rem;
-
-    --fs-body: var(--fs-200);
-    --fs-primary-heading: var(--fs-600);
-    --fs-secondary-heading: var(--fs-400);
-    --fs-hero-title: var(--fs-600);
-    --fs-hero-2nd-title: var(--fs-500);
-    --fs-all-digits: var(--fs-700);
-
-    --size-900: 5rem;
-    --size-500: 2rem;
-    --size-700: 3rem;
-    --size-400: 1rem;
-    --size-300: .8rem;
-    --size-200: .6rem;
-    --size-100: .4rem;
-
-
-    --min-width: 100%;
-    /* Default value for --min-width */
-    --padding: 20px;
-    /* Default value for --padding */
+/********** Top Banner**********/
+.top-banner {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    padding: 1.5rem 0 1.5rem 0;
+    border-radius: 6px;
 }
-
-
-@media (max-width: 90em) {
-    :root {
-        --fs-body: var(--fs-150);
-        --fs-primary-heading: var(--fs-500);
-        --fs-secondary-heading: var(--fs-300);
-        --fs-hero-title: var(--fs-450);
-        --fs-hero-2nd-title: var(--fs-425);
-        --fs-all-digits: var(--fs-650);
-    }
-
-
-}
-
-@media (max-width: 24.4em) {
-    :root {
-        --fs-body: var(--fs-100);
-        --fs-primary-heading: var(--fs-425);
-        --fs-secondary-heading: var(--fs-300);
-        --fs-hero-title: var(--fs-150);
-        --fs-hero-2nd-title: var(--fs-100);
-        --fs-all-digits: var(--fs-625);
-    }
-
-}
-
-
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-    margin: 0;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    font: inherit;
-}
-
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
-    list-style: none;
-}
-
-/* Set core root defaults */
-html:focus-within {
-    scroll-behavior: smooth;
-}
-
-/* Set core body defaults */
-html,
-body {
-    height: 100%;
-}
-
-body {
-    text-rendering: optimizeSpeed;
-    line-height: 1.5;
-}
-
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-    text-decoration-skip-ink: auto;
-}
-
-/* Make images easier to work with */
-img,
-picture {
-    max-width: 100%;
-    display: block;
-}
-
-
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-    html:focus-within {
-        scroll-behavior: auto;
-    }
-
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
-}
-
-
+/**************** Nav Bar *************/
 .nav-header {
     display: flex;
     justify-content: space-between;
-    /* background: var(--absolute-white); */
     height: 80px;
-    width: 75%;
+    width: 100%;
 }
 
 .nav-wrapper {
+    gap: 5px;
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -293,7 +137,7 @@ a:hover {
     }
 }
 
-/************hero section********/
+/******************* hero section ******************/
 
 .hero-container {
     display: flex;
@@ -376,7 +220,7 @@ a:hover {
     display: flex;
 }
 
-/****************hero image*************/
+/**********************  hero image  **********************/
 .hero-image {
     background-size: cover;
     background-repeat: no-repeat;
@@ -397,133 +241,15 @@ a:hover {
     gap: .2rem;
 }
 
-
-/******************* font color *************/
-
-.text-grey-10 {
-    color: var(--grey-10);
-}
-
-.text-grey-15 {
-    color: var(--grey-15);
-}
-
-.text-grey-30 {
-    color: var(--grey-30);
-}
-
-.text-grey-35 {
-    color: var(--grey-35);
-}
-
-.text-white-100 {
-    color: var(--absolute-white);
-}
-
-.text-orange-50 {
-    color: var(--orange-50);
-}
-
-
-/**************** background color **************/
-
-.bg-white-absol-100 {
-    background-color: var(--absolute-white);
-}
-
-.bg-white-99 {
-    background-color: var(--White-99);
-}
-
-.bg-white-97 {
-    background-color: var(--White-97);
-}
-
-.bg-white-95 {
-    background-color: var(--White-95);
-}
-
-.bg-black-absolute {
-    background-color: var(--absolute-black);
-}
-
-.bg-orange-50 {
-    background-color: var(--orange-50);
-}
-
-.bg-orange-90 {
-    background-color: var(--Orange-90);
-}
-
-.bg-transparent {
-    background: transparent;
-}
-
-
-/********************* font weight ******/
-
-.fw-regular {
-    font-weight: var(--fw-regular);
-}
-
-.fw-semibold {
-    font-weight: var(--fw-semibold);
-}
-
-.fw-bold {
-    font-weight: var(--fw-bold);
-}
-
-/************ font sizes *************/
-
-.fs-primary-heading {
-    font-size: var(--fs-primary-heading);
-    line-height: 1.1;
-}
-
-.fs-secondary-heading {
-    font-size: var(--fs-secondary-heading);
-}
-
-.fs-body {
-    font-size: var(--fs-body);
-}
-
-.fs-hero-title {
-    font-size: var(--fs-hero-title);
-}
-
-.fs-hero-2nd-title {
-    font-size: var(--fs-hero-2nd-title);
-}
-
-.fs-350 {
-    font-size: var(--fs-350);
-}
-
-.fs-625 {
-    font-size: var(--fs-625);
-}
-
-.fs-all-digits {
-    font-size: var(--fs-all-digits);
-}
-
-.fs-card-bold {
-    font-size: var(--fs-300);
-}
-
-
-/* General styling ***/
+/************* General styling *****************/
 
 .body {
     font-family: var(--ff-body);
     font-size: var(--fs-body);
     color: var(--grey-15);
     margin: 1rem;
-    background: var(--White-99);
+    background: var(--White-95);
 }
-
 
 .container {
     width: min(var(--min-width), calc(100% - (var(--padding) * 2)));
@@ -549,8 +275,6 @@ a:hover {
 .padding-top-bottom {
     padding: 1.5rem 0 1.5rem 0;
 }
-
-
 
 .flex-row-fixed {
     display: flex;
@@ -624,7 +348,7 @@ a:hover {
     justify-content: right;
 }
 
-/************* Two Even columns flex grid**/
+/************* Two Even columns flex grid *****************/
 .flex-grid-two-col {
     display: flex;
     flex-wrap: wrap;
@@ -664,7 +388,7 @@ a:hover {
     }
 }
 
-/************* Two Uneven columns flex grid**/
+/************* Two Uneven columns flex grid ******************/
 .flex-grid-two-col-uneven {
     display: flex;
     flex-wrap: wrap;
@@ -687,7 +411,7 @@ a:hover {
     padding: 3rem;
 }
 
-/************* Three Even columns flex grid**/
+/************* Three Even columns flex grid ****************/
 
 .flex-grid-three-col {
     display: flex;
@@ -706,7 +430,6 @@ a:hover {
     padding: 3rem;
     background-color: var(--absolute-white);
     border-radius: 0.6rem;
-
 }
 
 @media (max-width: 35em) {
@@ -725,20 +448,9 @@ a:hover {
         padding-top: 0.4rem;
         padding-bottom: 0.2rem;
     }
-
-
 }
 
-/********** Top Banner**********/
-.top-banner {
-    display: flex;
-    gap: 0.5rem;
-    justify-content: center;
-    padding: 1.5rem 0 1.5rem 0;
-    border-radius: 6px;
-}
-
-/*********LOgo***************/
+/********* LOgo ***************/
 .main-logo {
     display: flex;
     justify-content: center;
@@ -758,7 +470,7 @@ a:hover {
     }
 }
 
-/***************** button *****/
+/***************** button ***************/
 
 .button {
     border-radius: .6rem;
@@ -789,8 +501,7 @@ a:hover {
 }
 
 
-
-/***********Faq* Mobile**********/
+/******************** Faq Mobile *************/
 @media (max-width: 24.4em) {
     .flex-grid-two-col-uneven:first-child {
         margin: .2rem;
@@ -798,7 +509,7 @@ a:hover {
     }
 }
 
-/*******pricing section**********/
+/********************* pricing section ********/
 .ul-li > li{
     border: 1px solid var(--White-95);
     border-radius: 8px;
@@ -851,7 +562,7 @@ a:hover {
     border-radius: 8px;
 }
 
-/******************footer********************/
+/****************** footer ********************/
 
 nav ul li a{
     text-decoration: none;
@@ -921,27 +632,3 @@ nav ul li a{
     }
 }
 
-/**************courses sec*******/
-
-.flex-box-two-col-courses {
-
-    flex-grow: 1;
-    flex-direction: column;
-    display: flex;
-    row-gap: 1rem;
-    width: 46%;
-    height: auto;
-    margin: 1rem 0;
-    padding: 1rem 0;
-    /* background-color: var(--absolute-white); */
-    border-radius: 0.6rem;  
-    
-}
-
-@media (max-width: 25rem) {
-    .flex-box-two-col-courses {
-        flex-basis: calc(100%);
-        align-items: flex-start;
-        padding: 0.2rem;
-    }
-}

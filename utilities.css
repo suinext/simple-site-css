@@ -1,0 +1,120 @@
+/******************* font color ***************************/
+
+.text-grey-10 {
+    color: var(--grey-10);
+}
+
+.text-grey-15 {
+    color: var(--grey-15);
+}
+
+.text-grey-30 {
+    color: var(--grey-30);
+}
+
+.text-grey-35 {
+    color: var(--grey-35);
+}
+
+.text-white-100 {
+    color: var(--absolute-white);
+}
+
+.text-orange-50 {
+    color: var(--orange-50);
+}
+
+
+/******************* background color ***********************/
+
+.bg-white-absol-100 {
+    background-color: var(--absolute-white);
+}
+
+.bg-white-99 {
+    background-color: var(--White-99);
+}
+
+.bg-white-97 {
+    background-color: var(--White-97);
+}
+
+.bg-white-95 {
+    background-color: var(--White-95);
+}
+
+.bg-black-absolute {
+    background-color: var(--absolute-black);
+}
+
+.bg-orange-50 {
+    background-color: var(--orange-50);
+}
+
+.bg-orange-90 {
+    background-color: var(--Orange-90);
+}
+
+.bg-transparent {
+    background: transparent;
+}
+
+
+/**************************** font weight ******************/
+
+.fw-regular {
+    font-weight: var(--fw-regular);
+}
+
+.fw-semibold {
+    font-weight: var(--fw-semibold);
+}
+
+.fw-bold {
+    font-weight: var(--fw-bold);
+}
+
+/*************************** font sizes ********************/
+
+.fs-primary-heading {
+    font-size: var(--fs-primary-heading);
+    line-height: 1.1;
+}
+
+.fs-secondary-heading {
+    font-size: var(--fs-secondary-heading);
+}
+
+.fs-body {
+    font-size: var(--fs-body);
+}
+
+.fs-hero-title {
+    font-size: var(--fs-hero-title);
+}
+
+.fs-hero-2nd-title {
+    font-size: var(--fs-hero-2nd-title);
+}
+
+.fs-350 {
+    font-size: var(--fs-350);
+}
+
+.fs-625 {
+    font-size: var(--fs-625);
+}
+
+.fs-all-digits {
+    font-size: var(--fs-all-digits);
+}
+
+.fs-card-bold {
+    font-size: var(--fs-300);
+}
+
+
+/**** gap **/
+.gap1percent{
+    gap: 1%;
+}

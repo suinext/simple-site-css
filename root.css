@@ -1,0 +1,88 @@
+:root {
+    /* Colors */
+    --absolute-white: #ffffff;
+    --White-99: #FCFCFD;
+    --White-97: #F7F7F8;
+    --White-95: #F1F1F3;
+
+
+    --absolute-black: #000000;
+
+    --orange-50: rgb(255, 149, 0);
+    --Orange-90: #FFEACC;
+
+    --grey-10: #1A1A1A;
+    --grey-15: #262626;
+    --grey-30: #4c4c4d;
+    --Grey-35: #59595A;
+
+    /* Fonts */
+    --ff-primary: 'Be Vietnam Pro', sans-serif;
+    --ff-body: var(--ff-primary);
+    --ff-heading: var(--ff-primary);
+
+    --fw-regular: 400;
+    --fw-semibold: 500;
+    --fw-bold: 600;
+
+    --fs-100: 0.875rem;
+    --fs-150: 1rem;
+    --fs-200: 1.125rem;
+    --fs-300: 1.25rem;
+    --fs-350: 1.375rem;
+    --fs-400: 1.5rem;
+    --fs-425: 1.75rem;
+    --fs-450: 2.25rem;
+    --fs-500: 2.375rem;
+    --fs-600: 3rem;
+    --fs-625: 3.125rem;
+    --fs-650: 3.75rem;
+    --fs-700: 5rem;
+
+    --fs-body: var(--fs-200);
+    --fs-primary-heading: var(--fs-600);
+    --fs-secondary-heading: var(--fs-400);
+    --fs-hero-title: var(--fs-600);
+    --fs-hero-2nd-title: var(--fs-500);
+    --fs-all-digits: var(--fs-700);
+
+    --size-900: 5rem;
+    --size-500: 2rem;
+    --size-700: 3rem;
+    --size-400: 1rem;
+    --size-300: .8rem;
+    --size-200: .6rem;
+    --size-100: .4rem;
+
+
+    --min-width: 100%;
+    /* Default value for --min-width */
+    --padding: 20px;
+    /* Default value for --padding */
+}
+
+
+@media (max-width: 90em) {
+    :root {
+        --fs-body: var(--fs-150);
+        --fs-primary-heading: var(--fs-500);
+        --fs-secondary-heading: var(--fs-300);
+        --fs-hero-title: var(--fs-450);
+        --fs-hero-2nd-title: var(--fs-425);
+        --fs-all-digits: var(--fs-650);
+    }
+
+
+}
+
+@media (max-width: 24.4em) {
+    :root {
+        --fs-body: var(--fs-100);
+        --fs-primary-heading: var(--fs-425);
+        --fs-secondary-heading: var(--fs-300);
+        --fs-hero-title: var(--fs-150);
+        --fs-hero-2nd-title: var(--fs-100);
+        --fs-all-digits: var(--fs-625);
+    }
+
+}

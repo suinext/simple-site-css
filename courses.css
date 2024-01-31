@@ -1,0 +1,32 @@
+
+.flex-box-two-col-courses {
+
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    row-gap: 1rem;
+    width: 46%;
+    height: auto;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    /* background-color: var(--absolute-white); */
+    border-radius: 0.6rem;  
+    
+}
+
+@media (max-width: 25rem) {
+    .flex-box-two-col-courses {
+        flex-basis: calc(100%);
+        align-items: flex-start;
+        padding: 0.2rem;
+    }
+}
+
+.courses-sections{
+    padding: 2rem;
+    background-color: var(--absolute-white);
+    margin: 5%;
+}
+.img-courses{
+    width: 30%;
+}
