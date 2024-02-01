@@ -43,24 +43,34 @@
     flex-grow: 1;
     flex-direction: column;
     display: flex;
-    row-gap: 1rem;
-    width: 14%;
-    height: auto;
-    margin: 1rem;
-    padding: 1.2rem;
     border-radius: 0.6rem;  
+    width: 18%;
+    height: 2rem;
+    margin: 0 0 0 0.5rem;
     
+}
+
+.h1coursesnumber{
+    font-size: var(--fs-primary-heading);
 }
 
 @media (max-width: 24.4em) {
 
     .flex-grid-five-col {
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .flex-box-five-col {
         flex-basis: calc(100%);
         align-items: flex-start;
-        padding: 1.5rem;
+        padding: 0.8rem;
+        gap: 0.6rem;
+        width: 100%;
+    }
+    .hr-hidden{
+        display: none;
+    }
+    .h1coursesnumber{
+        font-size: var(--fs-primary-heading);
     }
 }
