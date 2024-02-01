@@ -1,3 +1,4 @@
+@import "./root.css";
 
 .flex-box-two-col-courses {
 
@@ -29,4 +30,37 @@
 }
 .img-courses{
     width: 30%;
+}
+/************* Five Even columns flex grid *****************/
+.flex-grid-five-col {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.flex-box-five-col {
+
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    row-gap: 1rem;
+    width: 14%;
+    height: auto;
+    margin: 1rem;
+    padding: 1.2rem;
+    border-radius: 0.6rem;  
+    
+}
+
+@media (max-width: 24.4em) {
+
+    .flex-grid-five-col {
+        flex-direction: row;
+    }
+
+    .flex-box-five-col {
+        flex-basis: calc(100%);
+        align-items: flex-start;
+        padding: 1.5rem;
+    }
 }

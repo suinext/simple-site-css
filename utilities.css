@@ -118,3 +118,12 @@
 .gap1percent{
     gap: 1%;
 }
+
+.margin05rem{
+    margin: 0.5rem;
+}
+
+.align-center{
+    align-items: center;
+    justify-content: center
+}
