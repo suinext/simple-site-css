@@ -221,15 +221,14 @@ a:hover {
 }
 
 /**********************  hero image  **********************/
-.hero-image {
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
-#hero-image {
-    width: 100%;
-    height: auto;
-}
+.iframe-parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 60vw;
+  }
 
 .opened {
     display: block;
